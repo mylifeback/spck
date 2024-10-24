@@ -1,6 +1,6 @@
 var staticCacheName = "skull";
-import { models, names, select } from "./select/data.js";
-const folder = "https://mylifeback.github.io/large/model/" + select.folder + "/";
+const folderName = "meningioma";
+const folder = "https://mylifeback.github.io/large/model/" + folderName + "/";
 
 const assets = [
   "./index.html",
