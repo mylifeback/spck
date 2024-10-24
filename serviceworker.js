@@ -23,7 +23,6 @@ const assets = [
   "./src/VolumeSlice.js",
   "./src/icon-512x512.png",
   "./src/icon-192x192.png",
-  "./src/fflate.module.js",
   folder + "skin.vtk",
   folder + "lesion.vtk",
   folder + "1.vtk",
