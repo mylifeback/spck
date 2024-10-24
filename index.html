@@ -42,7 +42,6 @@
     </script>
 
     <script type="module">
-      const a = "./select/data.js";
       import * as THREE from "./src/three.js";
       // import Stats from "./src/stats.module.js";
       import { GUI } from "./src/lil-gui.module.min.js";
@@ -50,7 +49,7 @@
       import { TrackballControls } from "./src/TrackballControls.js";
       import { VTKLoader } from "./src/VTKLoader.js";
       // import { NRRDLoader } from './src/NRRDLoader.js';
-      import {models, names, select} from a;
+      import {models, names, select} from "./select/data.js";
 
       let stats, gui, controls, camera, scene, renderer;
 
