@@ -137,9 +137,13 @@
           transparent: true,
           color: modelColor,
         });
+          if (modelOpacity == 1) {
+            meshMaterial.transparent = false;
+            console.log(modelName + "is opaque.");
+          }
           if (modelName.includes("skin") | modelName.includes("Skin")){
             meshMaterial.renderOrder = 2;
-            console.log(modelName + " renderOrder set as 2");
+            console.log(modelName + " renderOrder set as 2.");
           }
 
         const meshLoader = new VTKLoader();
