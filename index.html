@@ -8,32 +8,22 @@
     />
     <link type="text/css" rel="stylesheet" href="./src/main.css" />
     <link rel="icon" type="image/x-icon" href="./src/favicon.ico" />
-    <title id="title">title</title>
-
-    
-
     <!-- Meta Tags required for
         Progressive Web App -->
     <meta name="apple-mobile-web-app-status-bar" content="#aa7700" />
     <meta name="theme-color" content="black" />
     <!-- Manifest File link -->
-   
     <link rel="manifest" href="./manifest.json" />
-   
     <!-- error with permission policy header: origin trial controlled feature not enabled: 'interest-cohort' -->
     <meta
       http-equiv="Permissions-Policy"
       content="interest-cohort=(), user-id=()"
     />
+    <title id="title">title</title>
   </head>
 
   <body>
-    <div id="info">
-      <!-- <a href="https://threejs.org" target="_blank" rel="noopener">in progress</a> -->
-      <div id="topic">topic</div>
-
-    </div>
-
+    <div id="topic">topic</div>
     <script type="importmap">
       {
         "imports": {
@@ -51,20 +41,18 @@
       }
     </script>
 
-
     <script type="module">
+      const a = "./select/data.js";
       import * as THREE from "./src/three.js";
-      // import Stats from "three/addons/stats.module.js";
-      // import { GUI } from "three/addons/lil-gui.module.min.js";
+      // import Stats from "./src/stats.module.js";
       import { GUI } from "./src/lil-gui.module.min.js";
       import { OrbitControls } from "./src/OrbitControls.js";
       import { TrackballControls } from "./src/TrackballControls.js";
       import { VTKLoader } from "./src/VTKLoader.js";
-      // import models from "./models.js";
-      // import names from "./names.js";
-      import {models, names, select} from "./select/data.js";
+      // import { NRRDLoader } from './src/NRRDLoader.js';
+      import {models, names, select} from a;
 
-      let stats, gui, camera, controls, scene, renderer;
+      let stats, gui, controls, camera, scene, renderer;
 
       document.getElementById("title").textContent = names.title;
       document.getElementById("topic").textContent = names.topic;
