@@ -48,14 +48,14 @@
       import { OrbitControls } from "./src/OrbitControls.js";
       import { TrackballControls } from "./src/TrackballControls.js";
       import { VTKLoader } from "./src/VTKLoader.js";
-      // import { NRRDLoader } from './src/NRRDLoader.js';
+      import { NRRDLoader } from './src/NRRDLoader.js';
       import {models, names, select} from "./select/data.js";
 
       let stats, gui, controls, camera, scene, renderer;
 
       document.getElementById("title").textContent = names.title;
       document.getElementById("topic").textContent = names.topic;
-      // const file = "https://mylifeback.github.io/large/dicom/" + names.file + ".nrrd";
+      const file = "https://mylifeback.github.io/large/dicom/" + names.file + ".nrrd";
 
       // // Register the Service Worker
       // registerSW();
@@ -110,8 +110,14 @@
 
         controls.addEventListener('change', animate);
         window.addEventListener("resize", onWindowResize);
-        // dicom(file);
-        models.forEach(show);
+
+        if (select.show == "dicom") {
+          dicom(file);
+        } else {
+          models.forEach(show);
+        }
+      
+        
       }
 
       function onWindowResize() {

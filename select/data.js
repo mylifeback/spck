@@ -1,5 +1,7 @@
 const folder = "meningioma";
 const file = "large";
+const show = "vtk";      
+// const show = "dicom";                  
 
 const a1 = ["lesion", "red", 1.0];
 const a2 = ["skin", "green", 0.7];
@@ -18,7 +20,8 @@ const names = {
 
 const select = {
   folder: folder,
-  file: file
+  file: file,
+  show: show
 };
 
 export {names, models, select};
