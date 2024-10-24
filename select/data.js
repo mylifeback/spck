@@ -1,3 +1,4 @@
+const folder = "meningioma";
 
 const a1 = ["lesion", "red", 1.0];
 const a2 = ["skin", "green", 0.7];
@@ -15,7 +16,7 @@ const names = {
 };
 
 const select = {
-  folder: "meningioma"
+  folder: folder
 };
 
 export {names, models, select};
