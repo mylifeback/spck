@@ -1,4 +1,5 @@
 const folder = "meningioma";
+const file = "large";
 
 const a1 = ["lesion", "red", 1.0];
 const a2 = ["skin", "green", 0.7];
@@ -12,11 +13,12 @@ const models = [a1, a2, a3, a4, a5, a6];
 const names = {
   title: "meningioma",
   topic: "large meningioma",
-  file: "large"
+  
 };
 
 const select = {
-  folder: folder
+  folder: folder,
+  file: file
 };
 
 export {names, models, select};
