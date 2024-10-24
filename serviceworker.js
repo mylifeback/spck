@@ -1,4 +1,6 @@
 var staticCacheName = "skull";
+import { models, names, select } from "./select/data.js";
+const folder = "https://mylifeback.github.io/large/model/" + select.folder + "/";
 
 const assets = [
   "./index.html",
@@ -19,12 +21,12 @@ const assets = [
   "./src/icon-512x512.png",
   "./src/icon-192x192.png",
   "./src/fflate.module.js",
-  "./file/lesion.vtk",
-  "./file/skin.vtk",
-  "./file/1.vtk",
-  "./file/2.vtk",
-  "./file/3.vtk",
-  "./file/4.vtk",
+  folder + "skin.vtk",
+  folder + "lesion.vtk",
+  folder + "1.vtk",
+  folder + "2.vtk",
+  folder + "3.vtk",
+  folder + "4.vtk",
 
 ];
 
