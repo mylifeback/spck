@@ -204,8 +204,8 @@ class VolumeSlice {
 		this.canvas.height = extracted.planeHeight;
 		this.canvasBuffer.width = this.iLength;
 		this.canvasBuffer.height = this.jLength;
-		this.ctx = this.canvas.getContext( '2d' );
-		this.ctxBuffer = this.canvasBuffer.getContext( '2d' );
+		this.ctx = this.canvas.getContext( '2d', {willReadFrequently: true} );
+		this.ctxBuffer = this.canvasBuffer.getContext( '2d', {willReadFrequently: true});
 
 		if ( this.geometry ) this.geometry.dispose(); // dispose existing geometry
 
