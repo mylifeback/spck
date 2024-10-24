@@ -140,6 +140,9 @@
           if (modelOpacity == 1) {
             meshMaterial.transparent = false;
             console.log(modelName + "is opaque.");
+          } else {
+            meshMaterial.opacity = modelOpacity;
+            console.log(modelName + " opacity is " + modelOpacity + ".");
           }
           if (modelName.includes("skin") | modelName.includes("Skin")){
             meshMaterial.renderOrder = 2;
