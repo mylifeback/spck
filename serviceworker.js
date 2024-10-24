@@ -1,5 +1,8 @@
+const folderName = "meningioma";  // update here instead of data.js, as serviceWorker does not support import statement
+
+
+
 var staticCacheName = "skull";
-const folderName = "meningioma";
 const folder = "https://mylifeback.github.io/large/model/" + folderName + "/";
 
 const assets = [
