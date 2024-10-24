@@ -56,6 +56,7 @@
       document.getElementById("title").textContent = names.title;
       document.getElementById("topic").textContent = names.topic;
       const file = "https://mylifeback.github.io/large/dicom/" + select.file + ".nrrd";
+      const folder = "https://mylifeback.github.io/large/model/" + select.folder + "/";
 
       // // Register the Service Worker
       // registerSW();
@@ -138,7 +139,7 @@
           const modelColor = model[1];
           const modelOpacity = model[2];
           model[3] ??= model[0];
-          const modelFile = "https://mylifeback.github.io/large/model/meningioma/" + model[3] + ".vtk";
+          const modelFile = folder + model[3] + ".vtk";
 
           const meshMaterial = new THREE.MeshLambertMaterial({
           wireframe: false,
