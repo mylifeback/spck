@@ -60,27 +60,24 @@
       import { OrbitControls } from "./src/OrbitControls.js";
       import { TrackballControls } from "./src/TrackballControls.js";
       import { VTKLoader } from "./src/VTKLoader.js";
-      // import models from "./models.js";
-      // import names from "./names.js";
       import {models, names, select} from "./select/data.js";
-
       let stats, gui, camera, controls, scene, renderer;
 
       document.getElementById("title").textContent = names.title;
       document.getElementById("topic").textContent = names.topic;
 
-      // // Register the Service Worker
-      // registerSW();
+      // Register the Service Worker
+      registerSW();
 
-      // async function registerSW() {
-      //   if ("serviceWorker" in navigator) {
-      //     try {
-      //       await navigator.serviceWorker.register("./serviceworker.js");
-      //     } catch (e) {
-      //       console.log("SW registration failed");
-      //     }
-      //   }
-      // }
+      async function registerSW() {
+        if ("serviceWorker" in navigator) {
+          try {
+            await navigator.serviceWorker.register("./serviceworker.js");
+          } catch (e) {
+            console.log("SW registration failed");
+          }
+        }
+      }
 
       console.log(models);
       init();
@@ -142,7 +139,7 @@
           const modelColor = model[1];
           const modelOpacity = model[2];
           model[3] ??= model[0];
-          const modelFile = "https://mylifeback.github.io/large/model/meningioma/" + model[3] + ".vtk";
+          const modelFile = "./file/" + model[3] + ".vtk";
 
           const meshMaterial = new THREE.MeshLambertMaterial({
           wireframe: false,
@@ -150,11 +147,6 @@
           transparent: true,
           color: modelColor,
         });
-          if (modelName.includes("skin") | modelName.includes("Skin")){
-            meshMaterial.renderOrder = 2;
-            console.log(modelName + " renderOrder set as 2");
-          }
-
         const meshLoader = new VTKLoader();
         meshLoader.load(modelFile, function (geometry) {
           geometry.computeVertexNormals();

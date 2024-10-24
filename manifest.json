@@ -1,0 +1,23 @@
+{
+  "name":"show patient",
+  "short_name":"pwa",
+  "start_url":"./pwa.html",
+  "display":"fullscreen",
+  "background_color":"#5900b3",
+  "theme_color":"black",
+  "scope": "/",
+  "description":"show & explain",
+  "icons":[
+  {
+  "src":"src/icon-192x192.png",          
+  "sizes":"192x192",
+  "type":"image/png",
+  "purpose": "maskable"
+  },
+  {
+  "src":"src/icon-512x512.png",
+  "sizes":"512x512",
+  "type":"image/png"
+  }
+]
+}

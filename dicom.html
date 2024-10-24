@@ -59,16 +59,16 @@
       import { GUI } from "./src/lil-gui.module.min.js";
       import { OrbitControls } from "./src/OrbitControls.js";
       import { TrackballControls } from "./src/TrackballControls.js";
-      import { VTKLoader } from "./src/VTKLoader.js";
+      import { NRRDLoader } from './src/NRRDLoader.js';
+      // import { VTKLoader } from "./src/VTKLoader.js";
       // import models from "./models.js";
-      // import names from "./names.js";
       import {models, names, select} from "./select/data.js";
-
       let stats, gui, camera, controls, scene, renderer;
 
       document.getElementById("title").textContent = names.title;
       document.getElementById("topic").textContent = names.topic;
 
+      const file = "https://mylifeback.github.io/large/dicom/" + names.file + ".nrrd";
       // // Register the Service Worker
       // registerSW();
 
@@ -82,7 +82,7 @@
       //   }
       // }
 
-      console.log(models);
+
       init();
 
       function init() {
@@ -121,8 +121,85 @@
         controls.addEventListener('change', animate);
         window.addEventListener("resize", onWindowResize);
 
-        models.forEach(show);
+        dicom(file);
+
+        // models.forEach(show);
       }
+
+      function dicom (file) {
+        const loader = new NRRDLoader();
+				loader.load( file, function ( volume ) {
+
+					//box helper to see the extend of the volume
+					const geometry = new THREE.BoxGeometry( volume.xLength, volume.yLength, volume.zLength );
+					const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
+					const cube = new THREE.Mesh( geometry, material );
+					cube.visible = false;
+					const box = new THREE.BoxHelper( cube );
+					scene.add( box );
+					box.applyMatrix4( volume.matrix );
+					scene.add( cube );
+
+					//z plane
+					const sliceZ = volume.extractSlice( 'z', Math.floor( volume.RASDimensions[ 2 ] / 4 ) );
+					scene.add( sliceZ.mesh );
+
+					//y plane
+					const sliceY = volume.extractSlice( 'y', Math.floor( volume.RASDimensions[ 1 ] / 2 ) );
+					scene.add( sliceY.mesh );
+
+					//x plane
+					const sliceX = volume.extractSlice( 'x', Math.floor( volume.RASDimensions[ 0 ] / 2 ) );
+					scene.add( sliceX.mesh );
+
+					gui.add( sliceX, 'index', 0, volume.RASDimensions[ 0 ], 1 ).name( 'indexX' ).onChange( function () {
+
+						sliceX.repaint.call( sliceX );
+            animate();
+
+					} );
+					gui.add( sliceY, 'index', 0, volume.RASDimensions[ 1 ], 1 ).name( 'indexY' ).onChange( function () {
+
+						sliceY.repaint.call( sliceY );
+            animate();
+
+					} );
+					gui.add( sliceZ, 'index', 0, volume.RASDimensions[ 2 ], 1 ).name( 'indexZ' ).onChange( function () {
+
+						sliceZ.repaint.call( sliceZ );
+            animate();
+
+					} );
+
+					gui.add( volume, 'lowerThreshold', volume.min, volume.max, 1 ).name( 'Lower Threshold' ).onChange( function () {
+
+						volume.repaintAllSlices();
+            animate();
+
+					} );
+					gui.add( volume, 'upperThreshold', volume.min, volume.max, 1 ).name( 'Upper Threshold' ).onChange( function () {
+
+						volume.repaintAllSlices();
+            animate();
+
+					} );
+					gui.add( volume, 'windowLow', volume.min, volume.max, 1 ).name( 'Window Low' ).onChange( function () {
+
+						volume.repaintAllSlices();
+            animate();
+
+					} );
+					gui.add( volume, 'windowHigh', volume.min, volume.max, 1 ).name( 'Window High' ).onChange( function () {
+
+						volume.repaintAllSlices();
+            animate();
+
+					} );
+          animate();
+				} );
+      }
+
+
 
       function onWindowResize() {
         camera.aspect = window.innerWidth / window.innerHeight;
@@ -134,6 +211,7 @@
 
       function animate() {
         // stats.update();
+        // controls.update();
         renderer.render(scene, camera);
       }
 
@@ -142,7 +220,7 @@
           const modelColor = model[1];
           const modelOpacity = model[2];
           model[3] ??= model[0];
-          const modelFile = "https://mylifeback.github.io/large/model/meningioma/" + model[3] + ".vtk";
+          const modelFile = "./file/" + model[3] + ".vtk";
 
           const meshMaterial = new THREE.MeshLambertMaterial({
           wireframe: false,
@@ -150,11 +228,6 @@
           transparent: true,
           color: modelColor,
         });
-          if (modelName.includes("skin") | modelName.includes("Skin")){
-            meshMaterial.renderOrder = 2;
-            console.log(modelName + " renderOrder set as 2");
-          }
-
         const meshLoader = new VTKLoader();
         meshLoader.load(modelFile, function (geometry) {
           geometry.computeVertexNormals();
