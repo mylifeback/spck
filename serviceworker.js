@@ -29,7 +29,7 @@ const assets = [
   folder + "2.vtk",
   folder + "3.vtk",
   folder + "4.vtk",
-
+  "./file/shot.png"
 ];
 
 self.addEventListener("install", function(e) {
