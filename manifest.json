@@ -6,7 +6,7 @@
   "background_color":"#5900b3",
   "theme_color":"black",
   "scope": "/",
-  "description":"show & explain",
+  "description":"HELLO HELLO show & explain",
   "icons":[
   {
   "src":"src/icon-192x192.png",          
@@ -19,5 +19,16 @@
   "sizes":"512x512",
   "type":"image/png"
   }
-]
+  ],
+  "screenshots": [
+  {
+   "src": "./file/shot.png",
+    "sizes": "387x444",
+    "type": "image/png",
+    "form_factor": "wide",
+    "label": "Wonder Widgets"
+  }
+  ]
 }
+
+
