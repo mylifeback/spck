@@ -11,7 +11,7 @@ const assets = [
   "./src/main.css",
   "./manifest.json",
   "./serviceworker.js",
-  "./src/three.js",
+  "./src/three164.js",
   "./src/fflate.module.js",
   "./src/lil-gui.module.min.js",
   "./src/OrbitControls.js",
