@@ -27,7 +27,14 @@
     "type": "image/png",
     "form_factor": "wide",
     "label": "Wonder Widgets"
-  }
+  },
+  {
+    "src": "./file/shot.png",
+     "sizes": "387x444",
+     "type": "image/png",
+     "form_factor": "narrow",
+     "label": "Wonder Widgets"
+   }
   ]
 }
 
