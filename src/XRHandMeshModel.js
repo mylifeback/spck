@@ -1,4 +1,4 @@
-import { GLTFLoader } from '../loaders/GLTFLoader.js';
+import { GLTFLoader } from './GLTFLoader.js';
 
 const DEFAULT_HAND_PROFILE_PATH = 'https://cdn.jsdelivr.net/npm/@webxr-input-profiles/assets@1.0/dist/profiles/generic-hand/';
 
