@@ -176,7 +176,7 @@
 			const hand2 = renderer.xr.getHand( 1 );
 			// hand2.add( new OculusHandModel( hand2 ) );
 			hand2.add( handModelFactory.createHandModel( hand2 ) );
-			const handPointer2 = new OculusHandPointerModel( hand2, controller2 );
+			const handPointer2 = new OculusHandPointerModel( hand2, controllerGrip2 );
 			hand2.add( handPointer2 );
 			scene.add( hand2 );
 
