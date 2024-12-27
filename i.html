@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
 		<title>My first three.js app</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 		<style>
 			body { margin: 0; }
             #hello {background-color: yellow;}
@@ -14,7 +15,8 @@
             {
                 "imports" :{
                     "three" : "./src/three170.js",
-                    "three/addons/controls/" : "./src/"
+                    "three/addons/controls/" : "./src/",
+                    "three/addons/webxr/" : "./src/"
                 }
             }
         </script>
@@ -22,10 +24,27 @@
 
             import * as THREE from "three";
             import { TrackballControls } from 'three/addons/controls/TrackballControls.js';
+            import { XRButton } from 'three/addons/webxr/XRButton.js';
+            // import { XRButton } from 'three/addons/webxr/XRButton.js';
+			// import { XRControllerModelFactory } from 'three/addons/webxr/XRControllerModelFactory.js';
             
             let camera, scene, renderer;
             let controls;
             let geometry, material, mesh;
+
+			let controller1, controller2;
+            let controllerGrip1, controllerGrip2;
+
+
+
+
+
+
+/* CAMERA SCENE RENDERER LIGHT
+****************
+*/
+
+
             camera = new THREE.PerspectiveCamera(
                 60,
                 window.innerWidth / window.innerHeight,
@@ -38,19 +57,54 @@
             scene = new THREE.Scene();
             scene.add(camera);
 
-            renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
-            renderer.setPixelRatio(window.devicePixelRatio);
-            renderer.setSize(window.innerWidth, window.innerHeight);
+            // renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+            // renderer.setPixelRatio(window.devicePixelRatio);
+            // renderer.setSize(window.innerWidth, window.innerHeight);
+
+
+            renderer = new THREE.WebGLRenderer( { antialias: true } );
+				renderer.setPixelRatio( window.devicePixelRatio );
+				renderer.setSize( window.innerWidth, window.innerHeight );
+				renderer.setAnimationLoop( frame );
+				renderer.shadowMap.enabled = true;
+				renderer.xr.enabled = true;
+                
+
             renderer.domElement.id = "hello";
             document.body.appendChild(renderer.domElement);
+
+            // document.body.appendChild( XRButton.createButton( renderer ) );
+
+            document.body.appendChild( XRButton.createButton( renderer, {
+                'optionalFeatures': [ 'depth-sensing' ],
+                'depthSensing': { 'usagePreference': [ 'gpu-optimized' ], 'dataFormatPreference': [] }
+            } ) );
+
             
             const dirLight = new THREE.DirectionalLight(0xffffff, 0.8);
             dirLight.position.set(200, 200, 200);
             scene.add(dirLight);
 
 
+/* experiment
+****************
+*/
 
 
+
+
+            const floorGeometry = new THREE.PlaneGeometry( 6, 6 );
+				const floorMaterial = new THREE.ShadowMaterial( { opacity: 0.25, blending: THREE.CustomBlending, transparent: false } );
+				const floor = new THREE.Mesh( floorGeometry, floorMaterial );
+				floor.rotation.x = - Math.PI / 2;
+				floor.receiveShadow = true;
+				scene.add( floor );
+
+
+
+/* MESH
+****************
+*/
 
             geometry = new THREE.PlaneGeometry (200,200,200);
             material = new THREE.MeshBasicMaterial({
@@ -75,11 +129,21 @@
             // console.log (mesh.position);
 
 
+/*  CONTROLS
+*****************
+*/
+
+            createControls (camera);
+            window.addEventListener('resize', onResize);
+
+            // setInterval (frame, 100);
+            renderer.setAnimationLoop(frame);
 
 
 
-
-
+/*  FUNCTIONS
+*****************
+*/
 
 
             function createControls (camera) {
@@ -90,23 +154,20 @@
                 controls.keys = ["KeyA", "KeyS", "KeyD"];
             }
 
-            function frame (time){
+            function frame (){
                 controls.update();
                 renderer.render(scene, camera);
-                // requestAnimationFrame(frame);
-                console.log (camera.position);
             }
 
             function onResize () {
                 camera.aspect = window.innerWidth / window.innerHeight;
                 camera.updateProjectionMatrix ();
                 renderer.setSize (window.innerWidth, window.innerHeight);
-                requestAnimationFrame(render);  
             }  
 
-            createControls (camera);
-            window.addEventListener('resize', onResize);
-            setInterval (frame, 100);
+
+
+
 
 
         </script>
