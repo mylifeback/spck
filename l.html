@@ -38,7 +38,7 @@
 			let container;
 			let camera, scene, renderer;
 			let controller1, controller2;
-			let controllerGrip1, controllerGrip2;
+			// let controllerGrip1, controllerGrip2;
 
 			let raycaster;
 
@@ -151,13 +151,7 @@
 
 				const controllerModelFactory = new XRControllerModelFactory();
 
-				controllerGrip1 = renderer.xr.getControllerGrip( 0 );
-				controllerGrip1.add( controllerModelFactory.createControllerModel( controllerGrip1 ) );
-				scene.add( controllerGrip1 );
 
-				controllerGrip2 = renderer.xr.getControllerGrip( 1 );
-				controllerGrip2.add( controllerModelFactory.createControllerModel( controllerGrip2 ) );
-				scene.add( controllerGrip2 );
 
 			// Hand 1
 			const controllerGrip1 = renderer.xr.getControllerGrip( 0 );
