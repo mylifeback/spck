@@ -41,6 +41,7 @@
 			let camera, scene, renderer;
 			let controller1, controller2;
 			// let controllerGrip1, controllerGrip2;
+			let HAND;
 
 			let raycaster;
 
@@ -94,6 +95,8 @@
 					new THREE.IcosahedronGeometry( 0.2, 8 ),
 					new THREE.TorusGeometry( 0.2, 0.04, 64, 32 )
 				];
+
+
 
 				// for ( let i = 0; i < 50; i ++ ) {
 
@@ -168,6 +171,7 @@
 			//hand1.add( handPointer1 );
 
 			scene.add( hand1 );
+			HAND = hand1;
 
 			// Hand 2
 			const controllerGrip2 = renderer.xr.getControllerGrip( 1 );
