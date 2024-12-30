@@ -49,6 +49,8 @@
 
 			let controls, group;
 
+			let session;
+
 			init();
 
 			function init() {
@@ -219,7 +221,8 @@
 				console.log ("select");
 				console.log(HAND);
 				console.log(navigator.xr);
-				console.log(navigator.XRInputSource.gamepad);
+				session = renderer.xr.getSession();
+				console.log(session.XRInputSource.gamepad);
 			}
 
 			function onWindowResize() {
