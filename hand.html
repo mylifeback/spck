@@ -171,7 +171,7 @@
 			//hand1.add( handPointer1 );
 
 			scene.add( hand1 );
-			HAND = hand1;
+
 
 			// Hand 2
 			const controllerGrip2 = renderer.xr.getControllerGrip( 1 );
@@ -184,6 +184,7 @@
 			const handPointer2 = new OculusHandPointerModel( hand2, controllerGrip2 );
 			hand2.add( handPointer2 );
 			scene.add( hand2 );
+			HAND = hand2;
 
 /* text
 *******
@@ -216,6 +217,7 @@
 
 			function log () {
 				console.log ("select");
+				console.log(HAND);
 			}
 
 			function onWindowResize() {
