@@ -24,12 +24,22 @@
   </head>
 
   <body>
+    <section>
+      
+    
     <div id="topic">topic
+    </section>
     
     <style>
-      div {
-        background-color: green
-      
+      @scope (section) {
+        div {
+        background-color: green; 
+        height: 150px;
+        color: RGB(100, 0, 0);
+        color: yellow;
+        font-family: cursive, 'Courier New', monospace, 'Times New Roman';
+        font-size: 3rem;
+        }
       }
     </style>
     
@@ -41,6 +51,9 @@
       hello
     </div>
     
+    <script>
+      topic.requestFullscreen();
+    </script>
     
     <script type="importmap">
       {
