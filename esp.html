@@ -28,21 +28,30 @@
     // const r = fetch("https://apple.com");
     // console.log(r);
     
-    async function send (){
-        try {
-          console.log("before");
-          const response = await fetch (url);
-          console.log("after");
-          if (!response.ok) {
-            throw new Error ("no response");
-          }
-          let reply = response.text();
-          monitor.innerText = reply;
-          console.log (reply);
-        } catch {
-          console.error (error.message);
-        }
+    // async function send (){
+    //     try {
+    //       console.log("before");
+    //       const response = await fetch (url);
+    //       console.log("after");
+    //       if (!response.ok) {
+    //         throw new Error ("no response");
+    //       }
+    //       let reply = response.text();
+    //       monitor.innerText = reply;
+    //       console.log (reply);
+    //     } catch {
+    //       console.error (error.message);
+    //     }
         
+    // }
+    
+    function send (){
+      fetch(url)
+      .then(x => x.text();)
+      .then(y => {
+        console.log(y);
+        monitor.innerText = y;
+      })
     }
     
     function submit (){
