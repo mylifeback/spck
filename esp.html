@@ -45,13 +45,10 @@
         
     // }
     
-    function send (){
+    function send (g){
       fetch(url)
       .then(x => x.text();)
-      .then(y => {
-        console.log(y);
-        monitor.innerText = y;
-      })
+      .then(y => monitor.innerText = y;);
     }
     
     function submit (){
