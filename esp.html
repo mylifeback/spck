@@ -37,6 +37,7 @@
             throw new Error ("no response");
           }
           let reply = response.text();
+          monitor.innerText = reply;
           console.log (reply);
         } catch {
           console.error (error.message);
