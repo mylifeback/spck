@@ -38,7 +38,7 @@
       
       #answer {
         border: solid red 2px;
-        color: yellow;
+        color: red;
         width: 300px;
         height: 200px;
         margin: 20px;
@@ -50,13 +50,13 @@
     <div id="topic">llama3.2:3b</div>
     <div id="question"></div>
     <button id="submit">submit</button>
-    <div id="answer"></div>
+    <div id="answer">AAA</div>
     
     <script type="module">
       
       // const url = "localhost:11434/api/generate%20-d%20'{"model":%20"llama3.2:3b",%20"prompt":%20"Why%20is%20the%20sky%20blue?", "stream": false}'"
-      const str = ˋlocalhost:11434/api/generate -d '{"model": "llama3.2:3b", "prompt": "Why is the sky blue?", "stream": false}'ˋ
-      const url = new URL (str);
+      // const str = ˋlocalhost:11434/api/generate -d '{"model": "llama3.2:3b", "prompt": "Why is the sky blue?", "stream": false}'ˋ
+      // const url = new URL (str);
       // const url = "https://jsonplaceholder.typicode.com/todos/1"
       
       const question = document.getElementById("question");
@@ -70,12 +70,19 @@
       function submitting (){
         console.log("submitting");
         const q = question.textContent;
-        fetch (url)
-        .then (function (response) {return response.json();})
-        .then (function (json) {return json.parse();})
-        .then (function (object) {
-          console.log(object["response"]);
-          answer.textContent = object["response"];
+        fetch ('https://jsonplaceholder.typicode.com/todos/1')
+        // fetch ("http://localhost:11434/api/generate -d '{"model": "llama3.2", "prompt": "Why is the sky blue?"}')
+        .then (function (response) {
+              return response.json();})
+        .then (function (json) {
+              console.log(json);
+              return json;
+              ;})
+        .then (function (object) { 
+              console.log (object["id"]);
+              answer.textContent = object["id"];
+              // console.log(object["response"]);
+              // answer.textContent = object["response"];
         })
         .catch (function(error){console.log("error");})
       }
