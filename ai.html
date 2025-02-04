@@ -66,7 +66,12 @@
       const a = "todos";
       const url = "https://jsonplaceholder.typicode.com/todos/1";
       
+      // const test = '\{:""';
+      const k = '{"model": "llama3.2:3b", "prompt": Why is the sky blue?", "stream": false}';
       
+      const i = 'localhost:11434/api/generate -d ';
+      const h = 'https://';
+      console.log (h+i+"'"+k+"'");
       
       const question = document.getElementById("question");
       const answer = document.getElementById("answer");
@@ -79,7 +84,8 @@
       function submitting (){
         console.log("submitting");
         const q = question.textContent;
-        fetch (url)
+        // fetch (url)
+        fetch (h+i+"'"+k+"'")
         // fetch ("http://localhost:11434/api/generate -d '{"model": "llama3.2", "prompt": "Why is the sky blue?"}')
         .then (function (response) {
               return response.json();})
