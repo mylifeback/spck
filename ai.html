@@ -49,21 +49,25 @@
   <body>
     <div id="topic">llama3.2:3b</div>
     <div id="question"></div>
-    <button id="submit" onclick="submit()">submit</button>
+    <button id="submit">submit</button>
     <div id="answer"></div>
     
     <script type="module">
       
-      // let url = "localhost:11434/api/generate -d '{"model": "llama3.2:3b", "prompt": "Why is the sky blue?", "stream": false}'"
-      
-      const url = "https://jsonplaceholder.typicode.com/todos/1"
+      // const url = "localhost:11434/api/generate%20-d%20'{"model":%20"llama3.2:3b",%20"prompt":%20"Why%20is%20the%20sky%20blue?", "stream": false}'"
+      const str = ˋlocalhost:11434/api/generate -d '{"model": "llama3.2:3b", "prompt": "Why is the sky blue?", "stream": false}'ˋ
+      const url = new URL (str);
+      // const url = "https://jsonplaceholder.typicode.com/todos/1"
       
       const question = document.getElementById("question");
       const answer = document.getElementById("answer");
+      const submit = document.getElementById("submit");
+      
+      submit.addEventListener("click", submitting);
    
 
     
-      function submit (){
+      function submitting (){
         console.log("submitting");
         const q = question.textContent;
         fetch (url)
