@@ -49,7 +49,7 @@
   <body>
     <div id="topic">llama3.2:3b</div>
     <div id="question"></div>
-    <button id="submit" onclick="submit">submit</button>
+    <button id="submit" onclick="submit()">submit</button>
     <div id="answer"></div>
     
     <script type="module">
@@ -64,15 +64,16 @@
 
     
       function submit (){
+        console.log("submitting");
         const q = question.textContent;
         fetch (url)
         .then (function (response) {return response.json();})
-        .then (function (json) {return json.parse();}
+        .then (function (json) {return json.parse();})
         .then (function (object) {
           console.log(object["response"]);
           answer.textContent = object["response"];
-        }
-        .catch (error){console.log("error");}
+        })
+        .catch (function(error){console.log("error");})
       }
 
 
