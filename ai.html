@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=yes, minimum-scale=1.0, maximum-scale=5.0"
+    />
+    <link type="text/css" rel="stylesheet" href="./src/main.css" />
+    <link rel="icon" type="image/x-icon" href="./src/favicon.ico" />
+
+    <meta name="apple-mobile-web-app-status-bar" content="#aa7700" />
+    <meta name="theme-color" content="black" />
+    <meta
+      http-equiv="Permissions-Policy"
+      content="interest-cohort=(), user-id=()"
+    />
+    <title id="title">ollama - llama3.2:3b</title>
+    <style>
+      body {
+        background-color: beige;
+      }
+    
+      #question {
+        border: solid red 2px;
+        color: yellow;
+        background-color: white;
+        width: 300px;
+        height: 50px;
+        margin: 20px;
+      }
+      
+      #submit {
+        margin: 20px;
+        background-color: green;
+      }
+      
+      #answer {
+        border: solid red 2px;
+        color: yellow;
+        width: 300px;
+        height: 200px;
+        margin: 20px;
+      }
+      
+    </style>
+  </head>
+
+  <body>
+    <div id="topic">llama3.2:3b</div>
+    <div id="question"></div>
+    <button id="submit" onclick="submit">submit</button>
+    <div id="answer"></div>
+    
+    <script type="module">
+      
+      let url = "localhost:11434/api/generate -d '{"model": "llama3.2", "prompt": "Why is the sky blue?", "stream": false}'"
+      
+      const question = document.getElementById("question");
+      const answer = document.getElementById("answer");
+   
+    
+    
+      function submit (){
+        const q = question.textContent;
+        fetch(url)
+        .then (response) {response.JSON();}
+        .then (json) {JSON.parse(json);}
+        .then (response) {
+          const an = json["response"];
+          answer.textContent = an;
+        }
+        .catch (){console.log("error");}
+      }
+
+
+    </script>
+  </body>
+</html>
