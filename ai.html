@@ -67,7 +67,7 @@
         .then (function (response) {return response.json();})
         .then (function (json) {return json.parse();}
         .then (function (object) {
-          console.log("object["response"]");
+          console.log(object["response"]);
           answer.textContent = object["response"];
         }
         .catch (error){console.log("error");}
