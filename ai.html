@@ -52,7 +52,10 @@
     <button id="submit">submit</button>
     <div id="answer">AAA</div>
     
-    <script type="module">
+    <script 
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/ollama-js-client/dist/browser/index.js"
+    >
       
       // const url = "localhost:11434/api/generate%20-d%20'{"model":%20"llama3.2:3b",%20"prompt":%20"Why%20is%20the%20sky%20blue?", "stream": false}'"
       // const str = ˋlocalhost:11434/api/generate -d '{"model": "llama3.2:3b", "prompt": "Why is the sky blue?", "stream": false}'ˋ
@@ -67,11 +70,10 @@
       const url = "https://jsonplaceholder.typicode.com/todos/1";
       
       // const test = '\{:""';
-      const k = '{"model": "llama3.2:3b", "prompt": Why is the sky blue?", "stream": false}';
+    
+      import Ollama from "ollama-js-client";
       
-      const i = 'localhost:11434/api/generate -d ';
-      const h = 'https://';
-      console.log (h+i+"'"+k+"'");
+      
       
       const question = document.getElementById("question");
       const answer = document.getElementById("answer");
@@ -79,30 +81,20 @@
       
       submit.addEventListener("click", submitting);
    
-
+      question.textContent = "are you my friend?";
     
       function submitting (){
         console.log("submitting");
-        const q = question.textContent;
-        // fetch (url)
-        fetch (h+i+"'"+k+"'")
-        // fetch ("http://localhost:11434/api/generate -d '{"model": "llama3.2", "prompt": "Why is the sky blue?"}')
-        .then (function (response) {
-              return response.json();})
-        .then (function (json) {
-              console.log(json);
-              return json;
-              ;})
-        .then (function (object) { 
-              console.log (object["id"]);
-              answer.textContent = object["id"];
-              // console.log(object["response"]);
-              // answer.textContent = object["response"];
-        })
-        .catch (function(error){console.log("error");})
+        const response = await new Ollama({
+              model: "llama3.2:3b",
+              url: "http://127.0.0.1:11434/api/",
+              }).prompt (question.textContent);
+        const jason = response.json();
+        console.log (jason);
+        console.log (jason.response);
+        answer.textContent = jason.response;
       }
-
-
+      
     </script>
   </body>
 </html>
