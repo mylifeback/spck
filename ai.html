@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -42,7 +43,6 @@
         height: 200px;
         margin: 20px;
       }
-      
     </style>
   </head>
 
@@ -54,7 +54,7 @@
     
     <script type="module">
       
-      let url = "localhost:11434/api/generate -d '{"model": "llama3.2", "prompt": "Why is the sky blue?", "stream": false}'"
+      // let url = "localhost:11434/api/generate -d '{"model": "llama3.2:3b", "prompt": "Why is the sky blue?", "stream": false}'"
       
       const question = document.getElementById("question");
       const answer = document.getElementById("answer");
@@ -63,14 +63,14 @@
     
       function submit (){
         const q = question.textContent;
-        fetch(url)
-        .then (response) {response.JSON();}
-        .then (json) {JSON.parse(json);}
-        .then (response) {
-          const an = json["response"];
-          answer.textContent = an;
+        fetch (url)
+        .then (function (response) {return response.json();})
+        .then (function (json) {return json.parse();}
+        .then (function (object) {
+          console.log("object["response"]");
+          answer.textContent = object["response"];
         }
-        .catch (){console.log("error");}
+        .catch (error){console.log("error");}
       }
 
 
