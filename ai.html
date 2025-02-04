@@ -59,10 +59,14 @@
       // const url = new URL (str);
       // const url = "https://jsonplaceholder.typicode.com/todos/1"
       
-      const test = ˋ
-      "'sl { :'"s ;a;'
-      ˋ;
-      console.log (test);
+      // const test = ˋ
+      // \"\'sl { :\'\'\'\"a s ;a;\'
+      // ˋ;
+      // console.log (test);
+      const a = "todos";
+      const url = "https://jsonplaceholder.typicode.com/todos/1";
+      
+      
       
       const question = document.getElementById("question");
       const answer = document.getElementById("answer");
@@ -75,7 +79,7 @@
       function submitting (){
         console.log("submitting");
         const q = question.textContent;
-        fetch ('https://jsonplaceholder.typicode.com/todos/1')
+        fetch (url)
         // fetch ("http://localhost:11434/api/generate -d '{"model": "llama3.2", "prompt": "Why is the sky blue?"}')
         .then (function (response) {
               return response.json();})
