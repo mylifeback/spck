@@ -41,7 +41,7 @@
       }
       
       #question {
-        border: solid red 2px;
+        /* border: solid red 2px; */
         background-color: white;
         width: 95%;
         height: 50%;
@@ -114,7 +114,7 @@
       let asked;
 
       form.addEventListener("submit", submitQ);      
-      question.addEventListener("enter", clearQ);
+      question.addEventListener("focus", clearQ);
       function clearQ(){question.value = null;}
       function submitQ (e){e.preventDefault();console.log("submitted"); main();}
       
