@@ -54,10 +54,11 @@
         padding-left: 10px;
       }
       
-      #submit {
+      #button {
         padding: 10px;
         background-color: green;
         width: 50%;
+        margin-left: 10px;
       }
       
       #answer {
@@ -74,19 +75,17 @@
 
   <body>
     <div id="top">
-    <div id="topic">model = llama3.2:3b</div>
+    <form id="form">
+    <label id="topic" for="question">model = llama3.2:3b</label>
     <input type="text" id="question" name="question" placeholder="type your question here ..."></input>
-    <br>
-    <label id="label" for="question"></label>
-    <button id="submit">submit</button>
+    <input type="submit" id="button" value="submit the question"></input>
+    </form>
     </div>
     
     <div id="down">
     <div id="answer">your answer will appear here later ...</div>
     </div>
-    <script 
-      type="module"
-    >
+    <script type="module">
       console.log ("begin ...");
       import Ollama from "./src/index.js";
       
@@ -96,7 +95,7 @@
             model: "llama3.2:3b",
           });
           asked = question.value;
-          question.value = question.value + "... wait !"
+          question.value = asked + "... wait !"
           const interval = setInterval (counter, 1000);
           const response = await ollama.prompt(asked);
           clearInterval (interval);
@@ -109,15 +108,20 @@
       
       const question = document.getElementById("question");
       const answer = document.getElementById("answer");
-      const submit = document.getElementById("submit");
+      const form = document.getElementById("form");
+      const button = document.getElementById("button");
       let count = 0;
       let asked;
+
+      form.addEventListener("submit", submitQ);      
+      question.addEventListener("enter", clearQ);
+      function clearQ(){question.value = null;}
+      function submitQ (e){e.preventDefault();console.log("submitted"); main();}
       
-      submit.addEventListener("click", main);
       
       function counter () {
         count ++;
-        question.value = asked + "   " + count;
+        question.value = asked + "   (" + count + ")";
       }
       
     </script>
