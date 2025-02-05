@@ -43,9 +43,11 @@
       #question {
         border: solid red 2px;
         background-color: white;
-        width: 90%;
+        width: 95%;
         height: 50%;
-        padding-left: 10px;
+        padding: 10px;
+        margin-left: 10px;
+        margin-bottom: 10px;
       }
       
       #label {
@@ -55,14 +57,17 @@
       #submit {
         padding: 10px;
         background-color: green;
+        width: 50%;
       }
       
       #answer {
         border: solid red 2px;
         background-color: beige;
-        width: 90%;
-        height: 80vh;
-        padding-left: 10px;
+        width: 95%;
+        /* height: 80vh; */
+        padding: 10px;
+        margin-left: 10px;
+        margin-top: 10px;
       }
     </style>
   </head>
@@ -72,12 +77,12 @@
     <div id="topic">model = llama3.2:3b</div>
     <input type="text" id="question" name="question" placeholder="type your question here ..."></input>
     <br>
-    <label id="label" for="question">your question</label>
+    <label id="label" for="question"></label>
     <button id="submit">submit</button>
     </div>
     
     <div id="down">
-    <div id="answer">AAA</div>
+    <div id="answer">your answer will appear here later ...</div>
     </div>
     <script 
       type="module"
@@ -90,13 +95,14 @@
             url: "http://127.0.0.1:11434/api/",
             model: "llama3.2:3b",
           });
-          const q = question.value;
-          console.log (q);
+          asked = question.value;
           question.value = question.value + "... wait !"
-          const response = await ollama.prompt(q);
-          const ans = response.response;
-          console.log (ans);
-          answer.textContent = ans;
+          const interval = setInterval (counter, 1000);
+          const response = await ollama.prompt(asked);
+          clearInterval (interval);
+          const answered = response.response;
+          console.log (answered);
+          answer.textContent = answered;
           // const next_response = await ollama.prompt("Elaborate on that.");
           // console.log(next_response.response);
         }
@@ -104,13 +110,14 @@
       const question = document.getElementById("question");
       const answer = document.getElementById("answer");
       const submit = document.getElementById("submit");
+      let count = 0;
+      let asked;
       
       submit.addEventListener("click", main);
       
-      function test () {
-        const q = question.value;
-        console.log (q);
-        answer.textContent = q;
+      function counter () {
+        count ++;
+        question.value = asked + "   " + count;
       }
       
     </script>
