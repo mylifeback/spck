@@ -1,0 +1,60 @@
+[
+    {
+        "id": "dc5a2557f7abf102",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "007adf8be66d64ff",
+        "type": "http in",
+        "z": "dc5a2557f7abf102",
+        "name": "",
+        "url": "/a.html",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 190,
+        "y": 260,
+        "wires": [
+            [
+                "5653937e359d2b08"
+            ]
+        ]
+    },
+    {
+        "id": "e80dd7f1e529ae4b",
+        "type": "http response",
+        "z": "dc5a2557f7abf102",
+        "name": "",
+        "statusCode": "200",
+        "headers": {
+            "content-type": "text/html"
+        },
+        "x": 570,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "5653937e359d2b08",
+        "type": "file in",
+        "z": "dc5a2557f7abf102",
+        "name": "",
+        "filename": "/data/data/com.termux/files/home/.www/a.html",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 410,
+        "y": 360,
+        "wires": [
+            [
+                "e80dd7f1e529ae4b"
+            ]
+        ]
+    }
+]
