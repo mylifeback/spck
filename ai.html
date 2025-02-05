@@ -18,81 +18,99 @@
     />
     <title id="title">ollama - llama3.2:3b</title>
     <style>
+      * {
+        color: red;
+        margin: 0px;
+        padding: 0px;
+      }
+      
+      top {
+        height: 20vh;
+      }
+      
+      down {
+        height: 80vh;      }
+    
       body {
         background-color: beige;
       }
-    
+      
+      #topic {
+        padding-left: 10px;
+        color: purple;
+      }
+      
       #question {
         border: solid red 2px;
-        color: yellow;
         background-color: white;
-        width: 300px;
-        height: 50px;
-        margin: 20px;
+        width: 90%;
+        height: 50%;
+        padding-left: 10px;
+      }
+      
+      #label {
+        padding-left: 10px;
       }
       
       #submit {
-        margin: 20px;
+        padding: 10px;
         background-color: green;
       }
       
       #answer {
         border: solid red 2px;
-        color: red;
-        width: 300px;
-        height: 200px;
-        margin: 20px;
+        background-color: beige;
+        width: 90%;
+        height: 80vh;
+        padding-left: 10px;
       }
     </style>
   </head>
 
   <body>
-    <div id="topic">llama3.2:3b</div>
-    <div id="question"></div>
+    <div id="top">
+    <div id="topic">model = llama3.2:3b</div>
+    <input type="text" id="question" name="question" placeholder="type your question here ..."></input>
+    <br>
+    <label id="label" for="question">your question</label>
     <button id="submit">submit</button>
-    <div id="answer">AAA</div>
+    </div>
     
+    <div id="down">
+    <div id="answer">AAA</div>
+    </div>
     <script 
       type="module"
-      src="https://cdn.jsdelivr.net/npm/ollama-js-client/dist/browser/index.js"
     >
+      console.log ("begin ...");
+      import Ollama from "./src/index.js";
       
-      // const url = "localhost:11434/api/generate%20-d%20'{"model":%20"llama3.2:3b",%20"prompt":%20"Why%20is%20the%20sky%20blue?", "stream": false}'"
-      // const str = ˋlocalhost:11434/api/generate -d '{"model": "llama3.2:3b", "prompt": "Why is the sky blue?", "stream": false}'ˋ
-      // const url = new URL (str);
-      // const url = "https://jsonplaceholder.typicode.com/todos/1"
-      
-      // const test = ˋ
-      // \"\'sl { :\'\'\'\"a s ;a;\'
-      // ˋ;
-      // console.log (test);
-      const a = "todos";
-      const url = "https://jsonplaceholder.typicode.com/todos/1";
-      
-      // const test = '\{:""';
-    
-      import Ollama from "ollama-js-client";
-      
-      
+        async function main() {
+          const ollama = new Ollama({
+            url: "http://127.0.0.1:11434/api/",
+            model: "llama3.2:3b",
+          });
+          const q = question.value;
+          console.log (q);
+          question.value = question.value + "... wait !"
+          const response = await ollama.prompt(q);
+          const ans = response.response;
+          console.log (ans);
+          answer.textContent = ans;
+          // const next_response = await ollama.prompt("Elaborate on that.");
+          // console.log(next_response.response);
+        }
       
       const question = document.getElementById("question");
       const answer = document.getElementById("answer");
       const submit = document.getElementById("submit");
       
-      submit.addEventListener("click", submitting);
-   
-      question.textContent = "are you my friend?";
-    
-      function submitting (){
-        console.log("submitting");
-        const response = await new Ollama({
-              model: "llama3.2:3b",
-              url: "http://127.0.0.1:11434/api/",
-              }).prompt (question.textContent);
-        const jason = response.json();
-        console.log (jason);
-        console.log (jason.response);
-        answer.textContent = jason.response;
+      submit.addEventListener("click", main);
+      
+      function test () {
+        const q = question.value;
+        console.log (q);
+        answer.textContent = q;
       }
       
     </script>
