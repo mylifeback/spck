@@ -2,13 +2,14 @@
 fluxbox-generate_menu
 fluxbox &
 #xfce4-session &
+xfce4-terminal &
 
 ## This file is executed during VNC server
 ## startup.
 
 # Launch terminal emulator Aterm.
 # Requires package 'aterm'.
-aterm -geometry 80x24+10+10 -ls &
+#aterm -geometry 80x24+10+10 -ls &
 
 # Launch Tab Window Manager.
 # Requires package 'xorg-twm'.
