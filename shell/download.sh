@@ -1,9 +1,9 @@
 #!/data/data/com.termus/files/usr/bin/bash
-echo "start"
-curl https://mylifeback.github.io/spck/shell/a.sh -o ~/bash
-curl https://mylifeback.github.io/spck/shell/a.js -o ~/javascript
+termux-toast "start downloading"
+curl https://mylifeback.github.io/spck/shell/action.sh -o ~/bash
+curl https://mylifeback.github.io/spck/shell/action.js -o ~/nodejs
 
-bash ~/bash
-node ~/javascript
+#bash ~/bash
+#node ~/nodejs
 
-echo "finished"
+termux-toast "download finished"
