@@ -1,2 +1,2 @@
 #!/data/data/com.termus/files/usr/bin/bash
-pkg install chromium
+pkg install termux-api chromium code-oss -y
