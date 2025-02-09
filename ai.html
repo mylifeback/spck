@@ -91,17 +91,21 @@
       console.log ("begin ...");
       import Ollama from "./src/index.js";
       
+   
+      
+ 
+      
         async function main() {
           const ollama = new Ollama({
             url: "http://127.0.0.1:11434/api/",
             model: "llama3.2:3b",
           });
           asked = question.value;
-          question.value = asked + "... wait !"
-          interval = setInterval (counter, 1000);
+          question.value = asked + "... wait !";
+          interval = setInterval (c, 1000);
           const response = await ollama.prompt(asked);
-          clearInterval (interval);
-          counter = 0;
+          clearQ();
+          question.value = asked + " (answered) "
           const answered = response.response;
           console.log (answered);
           answer.textContent = answered;
@@ -120,16 +124,16 @@
       form.addEventListener("submit", submitQ);      
       question.addEventListener("focus", clearQ);
       function clearQ(){question.value = null;
-        counter=0;
-        //if (interval){clearInterval(interval);}
+        count=0;
+        if (interval){clearInterval(interval);}
       }
       function submitQ (e){e.preventDefault();console.log("submitted"); main();}
       
-      
-      function counter () {
+         
+      function c() {
         count ++;
         question.value = asked + "   (" + count + ")";
-        console.log(counter);
+        console.log(count);
       }
       
     </script>

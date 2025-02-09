@@ -12,4 +12,4 @@ vncpasswd
 apt install coreutils nano nodejs
 npm i -g --unsafe-perm node-red
 
-export OLLAMA_ORIGINS=http://mylifeback.github.io,http://crawford1903.mynetgear.com
+export OLLAMA_ORIGINS=https://mylifeback.github.io,http://crawford1903.mynetgear.com
