@@ -121,7 +121,7 @@
       question.addEventListener("focus", clearQ);
       function clearQ(){question.value = null;
         counter=0;
-        if (interval){clearInterval(interval);}
+        //if (interval){clearInterval(interval);}
       }
       function submitQ (e){e.preventDefault();console.log("submitted"); main();}
       
@@ -129,6 +129,7 @@
       function counter () {
         count ++;
         question.value = asked + "   (" + count + ")";
+        console.log(counter);
       }
       
     </script>
