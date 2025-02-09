@@ -98,7 +98,7 @@
           });
           asked = question.value;
           question.value = asked + "... wait !"
-          const interval = setInterval (counter, 1000);
+          interval = setInterval (counter, 1000);
           const response = await ollama.prompt(asked);
           clearInterval (interval);
           counter = 0;
@@ -115,10 +115,14 @@
       const button = document.getElementById("button");
       let count = 0;
       let asked;
+      let interval;
 
       form.addEventListener("submit", submitQ);      
       question.addEventListener("focus", clearQ);
-      function clearQ(){question.value = null;}
+      function clearQ(){question.value = null;
+        counter=0;
+        if (interval){clearInterval(interval);}
+      }
       function submitQ (e){e.preventDefault();console.log("submitted"); main();}
       
       
