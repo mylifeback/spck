@@ -9,3 +9,5 @@ vncconfig &
 (or vncconfig -nowin)
 vncpasswd
 
+apt install coreutils nano nodejs
+npm i -g --unsafe-perm node-red
