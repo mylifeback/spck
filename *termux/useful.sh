@@ -11,4 +11,4 @@ DU
 show file/directory by size (sorted)
 du -a -h --max-depth=1 | sort -hr
 
-
+STAT $path
