@@ -7,8 +7,10 @@ pkg install tur-repo -y
 
 pkg install chromium code-oss -y
 
-apt install coreutils nano nodejs
+apt install coreutils nano nodejs 
 npm i -g --unsafe-perm node-red
+
+termux-setup-storage
 
 passwd
 
