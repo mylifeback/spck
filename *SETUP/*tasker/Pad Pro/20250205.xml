@@ -1,0 +1,3137 @@
+<TaskerData sr="" dvi="1" tv="6.3.13">
+	<dmetric>1220.0,2608.0</dmetric>
+	<Profile sr="prof16" ve="2">
+		<cdate>1733299455117</cdate>
+		<edate>1733300171331</edate>
+		<flags>10</flags>
+		<id>16</id>
+		<mid0>27</mid0>
+		<mid1>31</mid1>
+		<nme>battery below 50</nme>
+		<State sr="con0" ve="2">
+			<code>140</code>
+			<Int sr="arg0" val="0"/>
+			<Int sr="arg1" val="50"/>
+		</State>
+	</Profile>
+	<Profile sr="prof25" ve="2">
+		<cdate>1733299455117</cdate>
+		<edate>1733305170471</edate>
+		<flags>10</flags>
+		<id>25</id>
+		<mid0>26</mid0>
+		<mid1>32</mid1>
+		<nme>battery below 20</nme>
+		<State sr="con0" ve="2">
+			<code>140</code>
+			<Int sr="arg0" val="0"/>
+			<Int sr="arg1" val="19"/>
+		</State>
+	</Profile>
+	<Profile sr="prof36" ve="2">
+		<cdate>1723708194011</cdate>
+		<edate>1724382335497</edate>
+		<flags>10</flags>
+		<id>36</id>
+		<mid0>37</mid0>
+		<nme>notifications</nme>
+		<Event sr="con0" ve="2">
+			<cname>notification</cname>
+			<code>461</code>
+			<pri>0</pri>
+			<App sr="arg0"/>
+			<Str sr="arg1" ve="3">!android</Str>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Int sr="arg7" val="0"/>
+		</Event>
+	</Profile>
+	<Profile sr="prof43" ve="2">
+		<cdate>1699604773661</cdate>
+		<edate>1723887017424</edate>
+		<flags>10</flags>
+		<id>43</id>
+		<limit>true</limit>
+		<mid0>44</mid0>
+		<nme>4 beep (wa wb voice call) 25%</nme>
+		<Event sr="con0" ve="2">
+			<code>461</code>
+			<pri>0</pri>
+			<App sr="arg0">
+				<appClass>com.whatsapp.Main,
+com.whatsapp.Main</appClass>
+				<appPkg>com.whatsapp,
+com.whatsapp.w4b</appPkg>
+				<label>WhatsApp,
+WA Business</label>
+			</App>
+			<Str sr="arg1" ve="3"/>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Int sr="arg7" val="0"/>
+		</Event>
+	</Profile>
+	<Profile sr="prof47" ve="2">
+		<cdate>1699604773668</cdate>
+		<edate>1723887043365</edate>
+		<flags>10</flags>
+		<id>47</id>
+		<limit>true</limit>
+		<mid0>86</mid0>
+		<nme>1 phone ringing</nme>
+		<Event sr="con0" ve="2">
+			<code>6</code>
+			<Str sr="arg0" ve="3"/>
+		</Event>
+	</Profile>
+	<Profile sr="prof51" ve="2">
+		<cdate>1699604773661</cdate>
+		<edate>1723886682255</edate>
+		<flags>10</flags>
+		<id>51</id>
+		<limit>true</limit>
+		<mid0>33</mid0>
+		<nme>2 beep (missed call) 25%</nme>
+		<Event sr="con0" ve="2">
+			<code>461</code>
+			<pri>0</pri>
+			<App sr="arg0">
+				<appClass>com.android.server.telecom.settings.EnableAccountPreferenceActivity</appClass>
+				<appPkg>com.android.server.telecom</appPkg>
+				<label>Calling accounts</label>
+			</App>
+			<Str sr="arg1" ve="3"/>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Int sr="arg7" val="0"/>
+		</Event>
+	</Profile>
+	<Profile sr="prof55" ve="2">
+		<cdate>1699604773665</cdate>
+		<edate>1699933150510</edate>
+		<flags>10</flags>
+		<id>55</id>
+		<limit>true</limit>
+		<mid0>56</mid0>
+		<nme>== --- ===</nme>
+		<Event sr="con0" ve="2">
+			<code>461</code>
+			<pri>0</pri>
+			<App sr="arg0">
+				<appClass>com.ifttt.ifttt.home.HomeActivity,
+group.flowbird.mpp.activities.SplashActivity,
+com.google.android.apps.messaging.ui.ConversationListActivity,
+com.android.contacts.activities.TwelveKeyDialer,
+com.readdle.spark.app.MainActivity,
+org.telegram.messenger.DefaultIcon,
+com.teslamotors.TeslaApp.MainActivity,
+com.whatsapp.Main,
+com.tencent.mm.ui.LauncherUI,
+com.whatsapp.Main,
+com.echk.run.SplashActivity</appClass>
+				<appPkg>com.ifttt.ifttt,
+hktd.flowbirdapp.com,
+com.google.android.apps.messaging,
+com.android.contacts,
+com.readdle.spark,
+org.telegram.messenger,
+com.teslamotors.tesla,
+com.whatsapp,
+com.tencent.mm,
+com.whatsapp.w4b,
+com.echk.run</appPkg>
+				<label>IFTTT,
+HKeMeter,
+Messages,
+Phone
+activities.TwelveKeyDialer,
+Spark,
+Telegram,
+Tesla,
+WhatsApp,
+WeChat,
+WA Business,
+走鬼</label>
+			</App>
+			<Str sr="arg1" ve="3"/>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Int sr="arg7" val="0"/>
+		</Event>
+	</Profile>
+	<Profile sr="prof57" ve="2">
+		<cdate>1699604773663</cdate>
+		<edate>1723887023529</edate>
+		<flags>10</flags>
+		<id>57</id>
+		<limit>true</limit>
+		<mid0>2</mid0>
+		<nme>3 beep (wa wb wechat) 25%</nme>
+		<Event sr="con0" ve="2">
+			<code>461</code>
+			<pri>0</pri>
+			<App sr="arg0">
+				<appClass>com.whatsapp.Main,
+com.whatsapp.Main,
+com.tencent.mm.ui.LauncherUI</appClass>
+				<appPkg>com.whatsapp.w4b,
+com.whatsapp,
+com.tencent.mm</appPkg>
+				<label>WA Business,
+WhatsApp,
+WeChat</label>
+			</App>
+			<Str sr="arg1" ve="3"/>
+			<Str sr="arg2" ve="3">!*new messages*</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Int sr="arg7" val="0"/>
+		</Event>
+	</Profile>
+	<Profile sr="prof8" ve="2">
+		<cdate>1719321031104</cdate>
+		<edate>1724382335903</edate>
+		<flags>10</flags>
+		<id>8</id>
+		<mid0>37</mid0>
+		<nme>VIP call</nme>
+		<Event sr="con0" ve="2">
+			<cname>phone call</cname>
+			<code>6</code>
+			<Str sr="arg0" ve="3">CG:(ALFRED)/C:ANY/C:FAV/AAA (myself)/3153*</Str>
+		</Event>
+	</Profile>
+	<Project sr="proj0" ve="2">
+		<cdate>1696498581301</cdate>
+		<mdate>1733300194838</mdate>
+		<name>base</name>
+		<pids>36,8,16,25</pids>
+		<scenes>popup</scenes>
+		<tids>10,37,3</tids>
+	</Project>
+	<Project sr="proj1" ve="2">
+		<cdate>1696516251455</cdate>
+		<mdate>1723985297186</mdate>
+		<name>notification</name>
+		<pids>55,47,51,57,43</pids>
+		<tids>98,33</tids>
+	</Project>
+	<Project sr="proj2" ve="2">
+		<cdate>1723984591106</cdate>
+		<mdate>1724379729954</mdate>
+		<name>fun</name>
+		<scenes>pop,video,map,web</scenes>
+		<tids>7,5,9,11,12,18,30,13</tids>
+	</Project>
+	<Scene sr="scenemap">
+		<cdate>1699494426077</cdate>
+		<edate>1724375857895</edate>
+		<heightLand>-1</heightLand>
+		<heightPort>900</heightPort>
+		<nme>map</nme>
+		<widthLand>-1</widthLand>
+		<widthPort>760</widthPort>
+		<TextElement sr="elements0" ve="3">
+			<flags>4</flags>
+			<geom>80,26,623,149,6,0,294,72</geom>
+			<Str sr="arg0" ve="3">title</Str>
+			<Str sr="arg1" ve="3">%title</Str>
+			<Int sr="arg2" val="30"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FFEA0D59</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="5"/>
+			<Int sr="arg7" val="2"/>
+			<Int sr="arg8" val="0"/>
+			<RectElement sr="background">
+				<flags>4</flags>
+				<geom>-1,-1,-1,-1,-1,-1,-1,-1</geom>
+				<Str sr="arg0" ve="3"/>
+				<Int sr="arg1" val="2"/>
+				<Str sr="arg2" ve="3">#807D2020</Str>
+				<Str sr="arg3" ve="3"/>
+				<Int sr="arg4" val="4"/>
+				<Str sr="arg5" ve="3">#FF000000</Str>
+				<Int sr="arg6" val="8"/>
+				<Int sr="arg7" val="0"/>
+			</RectElement>
+		</TextElement>
+		<RectElement sr="elements1">
+			<flags>4</flags>
+			<geom>0,181,760,20,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">Header</Str>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3">#77333333</Str>
+			<Str sr="arg3" ve="3"/>
+			<Int sr="arg4" val="0"/>
+			<Str sr="arg5" ve="3">#FF000000</Str>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+		</RectElement>
+		<TextElement sr="elements2" ve="3">
+			<clickTask>-936</clickTask>
+			<flags>5</flags>
+			<geom>80,225,623,399,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">text</Str>
+			<Str sr="arg1" ve="3">%message</Str>
+			<Int sr="arg2" val="18"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FFFFFFFF</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="5"/>
+			<Int sr="arg7" val="2"/>
+			<Int sr="arg8" val="0"/>
+			<RectElement sr="background">
+				<flags>4</flags>
+				<geom>-1,-1,-1,-1,-1,-1,-1,-1</geom>
+				<Str sr="arg0" ve="3"/>
+				<Int sr="arg1" val="0"/>
+				<Str sr="arg2" ve="3"/>
+				<Str sr="arg3" ve="3"/>
+				<Int sr="arg4" val="0"/>
+				<Str sr="arg5" ve="3">#FF000000</Str>
+				<Int sr="arg6" val="0"/>
+				<Int sr="arg7" val="0"/>
+			</RectElement>
+		</TextElement>
+		<ButtonElement sr="elements3" ve="3">
+			<clickTask>23</clickTask>
+			<geom>180,649,399,100,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">script</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="16"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FF000000</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Img sr="arg7" ve="2">
+				<nme>hl_aaa_ext_io</nme>
+			</Img>
+		</ButtonElement>
+		<ButtonElement sr="elements4" ve="3">
+			<clickTask>24</clickTask>
+			<flags>4</flags>
+			<geom>180,773,399,100,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">exit</Str>
+			<Str sr="arg1" ve="3">EXIT</Str>
+			<Int sr="arg2" val="16"/>
+			<Int sr="arg3" val="200"/>
+			<Str sr="arg4" ve="3">#FFE71616</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Img sr="arg7" ve="2"/>
+		</ButtonElement>
+		<SceneElement sr="elements5" ve="2">
+			<flags>4</flags>
+			<geom>80,225,629,399,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">Map</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="11"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="0"/>
+		</SceneElement>
+		<PropertiesElement sr="props">
+			<Int sr="arg0" val="1"/>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3">#FF3187AE</Str>
+			<Int sr="arg3" val="0"/>
+			<Str sr="arg4" ve="3">Popup</Str>
+			<Str sr="arg5" ve="3"/>
+			<Img sr="arg6" ve="2"/>
+			<Str sr="arg7" ve="3"/>
+		</PropertiesElement>
+	</Scene>
+	<Scene sr="scenepop">
+		<cdate>1699494426077</cdate>
+		<edate>1724144047396</edate>
+		<heightLand>-1</heightLand>
+		<heightPort>900</heightPort>
+		<nme>pop</nme>
+		<widthLand>-1</widthLand>
+		<widthPort>760</widthPort>
+		<TextElement sr="elements0" ve="3">
+			<flags>4</flags>
+			<geom>80,26,623,149,6,0,294,72</geom>
+			<Str sr="arg0" ve="3">title</Str>
+			<Str sr="arg1" ve="3">%title</Str>
+			<Int sr="arg2" val="30"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FFEA0D59</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="5"/>
+			<Int sr="arg7" val="2"/>
+			<Int sr="arg8" val="0"/>
+			<RectElement sr="background">
+				<flags>4</flags>
+				<geom>-1,-1,-1,-1,-1,-1,-1,-1</geom>
+				<Str sr="arg0" ve="3"/>
+				<Int sr="arg1" val="2"/>
+				<Str sr="arg2" ve="3">#807D2020</Str>
+				<Str sr="arg3" ve="3"/>
+				<Int sr="arg4" val="4"/>
+				<Str sr="arg5" ve="3">#FF000000</Str>
+				<Int sr="arg6" val="8"/>
+				<Int sr="arg7" val="0"/>
+			</RectElement>
+		</TextElement>
+		<RectElement sr="elements1">
+			<flags>4</flags>
+			<geom>0,181,760,20,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">Header</Str>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3">#77333333</Str>
+			<Str sr="arg3" ve="3"/>
+			<Int sr="arg4" val="0"/>
+			<Str sr="arg5" ve="3">#FF000000</Str>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+		</RectElement>
+		<TextElement sr="elements2" ve="3">
+			<clickTask>-936</clickTask>
+			<flags>5</flags>
+			<geom>80,225,623,399,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">text</Str>
+			<Str sr="arg1" ve="3">%message</Str>
+			<Int sr="arg2" val="18"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FFFFFFFF</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="5"/>
+			<Int sr="arg7" val="2"/>
+			<Int sr="arg8" val="0"/>
+			<RectElement sr="background">
+				<flags>4</flags>
+				<geom>-1,-1,-1,-1,-1,-1,-1,-1</geom>
+				<Str sr="arg0" ve="3"/>
+				<Int sr="arg1" val="0"/>
+				<Str sr="arg2" ve="3"/>
+				<Str sr="arg3" ve="3"/>
+				<Int sr="arg4" val="0"/>
+				<Str sr="arg5" ve="3">#FF000000</Str>
+				<Int sr="arg6" val="0"/>
+				<Int sr="arg7" val="0"/>
+			</RectElement>
+		</TextElement>
+		<ButtonElement sr="elements3" ve="3">
+			<clickTask>4</clickTask>
+			<geom>180,649,399,100,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">script</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="16"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FF000000</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Img sr="arg7" ve="2">
+				<nme>hl_aaa_ext_io</nme>
+			</Img>
+		</ButtonElement>
+		<ButtonElement sr="elements4" ve="3">
+			<clickTask>6</clickTask>
+			<flags>4</flags>
+			<geom>180,773,399,100,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">exit</Str>
+			<Str sr="arg1" ve="3">EXIT</Str>
+			<Int sr="arg2" val="16"/>
+			<Int sr="arg3" val="200"/>
+			<Str sr="arg4" ve="3">#FFE71616</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Img sr="arg7" ve="2"/>
+		</ButtonElement>
+		<PropertiesElement sr="props">
+			<Int sr="arg0" val="1"/>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3">#FF3187AE</Str>
+			<Int sr="arg3" val="0"/>
+			<Str sr="arg4" ve="3">Popup</Str>
+			<Str sr="arg5" ve="3"/>
+			<Img sr="arg6" ve="2"/>
+			<Str sr="arg7" ve="3"/>
+		</PropertiesElement>
+	</Scene>
+	<Scene sr="scenepopup">
+		<cdate>1699494426077</cdate>
+		<edate>1724377147963</edate>
+		<heightLand>-1</heightLand>
+		<heightPort>900</heightPort>
+		<nme>popup</nme>
+		<widthLand>-1</widthLand>
+		<widthPort>760</widthPort>
+		<TextElement sr="elements0" ve="3">
+			<flags>4</flags>
+			<geom>80,26,623,149,6,0,294,72</geom>
+			<Str sr="arg0" ve="3">title</Str>
+			<Str sr="arg1" ve="3">%title</Str>
+			<Int sr="arg2" val="30"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FFEA0D59</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="5"/>
+			<Int sr="arg7" val="2"/>
+			<Int sr="arg8" val="0"/>
+			<RectElement sr="background">
+				<flags>4</flags>
+				<geom>-1,-1,-1,-1,-1,-1,-1,-1</geom>
+				<Str sr="arg0" ve="3"/>
+				<Int sr="arg1" val="2"/>
+				<Str sr="arg2" ve="3">#807D2020</Str>
+				<Str sr="arg3" ve="3"/>
+				<Int sr="arg4" val="4"/>
+				<Str sr="arg5" ve="3">#FF000000</Str>
+				<Int sr="arg6" val="8"/>
+				<Int sr="arg7" val="0"/>
+			</RectElement>
+		</TextElement>
+		<RectElement sr="elements1">
+			<flags>4</flags>
+			<geom>0,181,760,20,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">Header</Str>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3">#77333333</Str>
+			<Str sr="arg3" ve="3"/>
+			<Int sr="arg4" val="0"/>
+			<Str sr="arg5" ve="3">#FF000000</Str>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+		</RectElement>
+		<TextElement sr="elements2" ve="3">
+			<clickTask>-936</clickTask>
+			<flags>5</flags>
+			<geom>80,225,623,399,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">text</Str>
+			<Str sr="arg1" ve="3">%message</Str>
+			<Int sr="arg2" val="24"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FFFFFFFF</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="5"/>
+			<Int sr="arg7" val="2"/>
+			<Int sr="arg8" val="0"/>
+			<RectElement sr="background">
+				<flags>4</flags>
+				<geom>-1,-1,-1,-1,-1,-1,-1,-1</geom>
+				<Str sr="arg0" ve="3"/>
+				<Int sr="arg1" val="0"/>
+				<Str sr="arg2" ve="3"/>
+				<Str sr="arg3" ve="3"/>
+				<Int sr="arg4" val="0"/>
+				<Str sr="arg5" ve="3">#FF000000</Str>
+				<Int sr="arg6" val="0"/>
+				<Int sr="arg7" val="0"/>
+			</RectElement>
+		</TextElement>
+		<ButtonElement sr="elements3" ve="3">
+			<clickTask>15</clickTask>
+			<flags>4</flags>
+			<geom>180,649,399,100,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">script</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="16"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FF000000</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Img sr="arg7" ve="2">
+				<nme>hl_aaa_ext_io</nme>
+			</Img>
+		</ButtonElement>
+		<ButtonElement sr="elements4" ve="3">
+			<clickTask>17</clickTask>
+			<flags>4</flags>
+			<geom>180,773,399,100,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">exit</Str>
+			<Str sr="arg1" ve="3">EXIT</Str>
+			<Int sr="arg2" val="16"/>
+			<Int sr="arg3" val="200"/>
+			<Str sr="arg4" ve="3">#FFE71616</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Img sr="arg7" ve="2"/>
+		</ButtonElement>
+		<PropertiesElement sr="props">
+			<Int sr="arg0" val="1"/>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3">#FF3187AE</Str>
+			<Int sr="arg3" val="0"/>
+			<Str sr="arg4" ve="3">Popup</Str>
+			<Str sr="arg5" ve="3"/>
+			<Img sr="arg6" ve="2"/>
+			<Str sr="arg7" ve="3"/>
+		</PropertiesElement>
+	</Scene>
+	<Scene sr="scenevideo">
+		<cdate>1699494426077</cdate>
+		<edate>1724317381981</edate>
+		<heightLand>-1</heightLand>
+		<heightPort>900</heightPort>
+		<nme>video</nme>
+		<widthLand>-1</widthLand>
+		<widthPort>760</widthPort>
+		<TextElement sr="elements0" ve="3">
+			<flags>4</flags>
+			<geom>80,26,623,149,6,0,294,72</geom>
+			<Str sr="arg0" ve="3">title</Str>
+			<Str sr="arg1" ve="3">%title</Str>
+			<Int sr="arg2" val="30"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FFEA0D59</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="5"/>
+			<Int sr="arg7" val="2"/>
+			<Int sr="arg8" val="0"/>
+			<RectElement sr="background">
+				<flags>4</flags>
+				<geom>-1,-1,-1,-1,-1,-1,-1,-1</geom>
+				<Str sr="arg0" ve="3"/>
+				<Int sr="arg1" val="2"/>
+				<Str sr="arg2" ve="3">#807D2020</Str>
+				<Str sr="arg3" ve="3"/>
+				<Int sr="arg4" val="4"/>
+				<Str sr="arg5" ve="3">#FF000000</Str>
+				<Int sr="arg6" val="8"/>
+				<Int sr="arg7" val="0"/>
+			</RectElement>
+		</TextElement>
+		<RectElement sr="elements1">
+			<flags>4</flags>
+			<geom>0,181,760,20,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">Header</Str>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3">#77333333</Str>
+			<Str sr="arg3" ve="3"/>
+			<Int sr="arg4" val="0"/>
+			<Str sr="arg5" ve="3">#FF000000</Str>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+		</RectElement>
+		<TextElement sr="elements2" ve="3">
+			<clickTask>-936</clickTask>
+			<flags>5</flags>
+			<geom>80,225,623,399,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">text</Str>
+			<Str sr="arg1" ve="3">%message</Str>
+			<Int sr="arg2" val="18"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FFFFFFFF</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="5"/>
+			<Int sr="arg7" val="2"/>
+			<Int sr="arg8" val="0"/>
+			<RectElement sr="background">
+				<flags>4</flags>
+				<geom>-1,-1,-1,-1,-1,-1,-1,-1</geom>
+				<Str sr="arg0" ve="3"/>
+				<Int sr="arg1" val="0"/>
+				<Str sr="arg2" ve="3"/>
+				<Str sr="arg3" ve="3"/>
+				<Int sr="arg4" val="0"/>
+				<Str sr="arg5" ve="3">#FF000000</Str>
+				<Int sr="arg6" val="0"/>
+				<Int sr="arg7" val="0"/>
+			</RectElement>
+		</TextElement>
+		<ButtonElement sr="elements3" ve="3">
+			<clickTask>19</clickTask>
+			<geom>180,649,399,100,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">script</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="16"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FF000000</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Img sr="arg7" ve="2">
+				<nme>hl_aaa_ext_io</nme>
+			</Img>
+		</ButtonElement>
+		<ButtonElement sr="elements4" ve="3">
+			<clickTask>20</clickTask>
+			<flags>4</flags>
+			<geom>180,773,399,100,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">exit</Str>
+			<Str sr="arg1" ve="3">EXIT</Str>
+			<Int sr="arg2" val="16"/>
+			<Int sr="arg3" val="200"/>
+			<Str sr="arg4" ve="3">#FFE71616</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Img sr="arg7" ve="2"/>
+		</ButtonElement>
+		<VideoElement sr="elements5">
+			<clickTask>22</clickTask>
+			<flags>4</flags>
+			<geom>80,225,624,399,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">Video</Str>
+			<Str sr="arg1" ve="3">DCIM/Camera/VID_20240821_182103.mp4</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<RectElement sr="background">
+				<flags>4</flags>
+				<geom>-1,-1,-1,-1,-1,-1,-1,-1</geom>
+				<Str sr="arg0" ve="3"/>
+				<Int sr="arg1" val="0"/>
+				<Str sr="arg2" ve="3"/>
+				<Str sr="arg3" ve="3"/>
+				<Int sr="arg4" val="0"/>
+				<Str sr="arg5" ve="3">#FF000000</Str>
+				<Int sr="arg6" val="0"/>
+				<Int sr="arg7" val="0"/>
+			</RectElement>
+		</VideoElement>
+		<PropertiesElement sr="props">
+			<Int sr="arg0" val="1"/>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3">#FF3187AE</Str>
+			<Int sr="arg3" val="0"/>
+			<Str sr="arg4" ve="3">Popup</Str>
+			<Str sr="arg5" ve="3"/>
+			<Img sr="arg6" ve="2"/>
+			<Str sr="arg7" ve="3"/>
+		</PropertiesElement>
+	</Scene>
+	<Scene sr="sceneweb">
+		<cdate>1699494426077</cdate>
+		<edate>1724381341872</edate>
+		<heightLand>-1</heightLand>
+		<heightPort>900</heightPort>
+		<nme>web</nme>
+		<widthLand>-1</widthLand>
+		<widthPort>760</widthPort>
+		<RectElement sr="elements0">
+			<flags>4</flags>
+			<geom>0,181,760,20,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">bar</Str>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3">#77333333</Str>
+			<Str sr="arg3" ve="3"/>
+			<Int sr="arg4" val="0"/>
+			<Str sr="arg5" ve="3">#FF000000</Str>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+		</RectElement>
+		<TextElement sr="elements1" ve="3">
+			<clickTask>-936</clickTask>
+			<flags>1</flags>
+			<geom>155,424,449,399,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">message</Str>
+			<Str sr="arg1" ve="3">%m</Str>
+			<Int sr="arg2" val="18"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FFFFFFFF</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="5"/>
+			<Int sr="arg7" val="2"/>
+			<Int sr="arg8" val="0"/>
+			<RectElement sr="background">
+				<flags>4</flags>
+				<geom>-1,-1,-1,-1,-1,-1,-1,-1</geom>
+				<Str sr="arg0" ve="3"/>
+				<Int sr="arg1" val="0"/>
+				<Str sr="arg2" ve="3"/>
+				<Str sr="arg3" ve="3"/>
+				<Int sr="arg4" val="0"/>
+				<Str sr="arg5" ve="3">#FF000000</Str>
+				<Int sr="arg6" val="0"/>
+				<Int sr="arg7" val="0"/>
+			</RectElement>
+		</TextElement>
+		<ButtonElement sr="elements2" ve="3">
+			<clickTask>28</clickTask>
+			<geom>180,649,399,100,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">script</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="16"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FF000000</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Img sr="arg7" ve="2">
+				<nme>hl_aaa_ext_io</nme>
+			</Img>
+		</ButtonElement>
+		<ButtonElement sr="elements3" ve="3">
+			<clickTask>29</clickTask>
+			<flags>4</flags>
+			<geom>180,773,399,100,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">exit</Str>
+			<Str sr="arg1" ve="3">EXIT</Str>
+			<Int sr="arg2" val="16"/>
+			<Int sr="arg3" val="200"/>
+			<Str sr="arg4" ve="3">#FFE71616</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Img sr="arg7" ve="2"/>
+		</ButtonElement>
+		<WebElement sr="elements4" ve="2">
+			<flags>4</flags>
+			<geom>56,225,648,399,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">body</Str>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3">http://crawford1903.mynetgear.com:3456/tasker/body.html</Str>
+			<Int sr="arg3" val="1"/>
+			<Int sr="arg4" val="1"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="1"/>
+			<Int sr="arg7" val="1"/>
+			<Str sr="arg8" ve="3"/>
+			<RectElement sr="background">
+				<flags>4</flags>
+				<geom>-1,-1,-1,-1,-1,-1,-1,-1</geom>
+				<Str sr="arg0" ve="3"/>
+				<Int sr="arg1" val="0"/>
+				<Str sr="arg2" ve="3">#4F1CC523</Str>
+				<Str sr="arg3" ve="3"/>
+				<Int sr="arg4" val="2"/>
+				<Str sr="arg5" ve="3">#FFE10D0D</Str>
+				<Int sr="arg6" val="0"/>
+				<Int sr="arg7" val="0"/>
+			</RectElement>
+		</WebElement>
+		<WebElement sr="elements5" ve="2">
+			<flags>4</flags>
+			<geom>130,26,474,125,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">title</Str>
+			<Int sr="arg1" val="2"/>
+			<Str sr="arg2" ve="3">&lt;style&gt;
+  .container {
+    width: 100%;
+    height: 100%;
+    /* border: solid red 1px; */
+  }
+
+  #ele {
+    border: solid yellow 1px;
+  }
+
+  #button1 {
+    border: solid red 1px;
+    width: 100%;
+    height: 100%;
+  }
+
+&lt;/style&gt;
+
+&lt;div class="container"&gt;
+  &lt;div id = "ele1"&gt;&lt;/div&gt;
+  &lt;div id = "ele2" &gt;&lt;/div&gt;
+  &lt;button id = "button1"&gt;task&lt;/button&gt;
+&lt;/di&gt;
+
+&lt;script&gt;
+  const ele1 = document.getElementById("ele1");
+  const ele2 = document.getElementById("ele2");
+  const but1 = document.getElementById("button1");
+  //setLocal ("beep", "on");
+  //ele1.innerHTML = "original element 1";
+  //ele2.innerHTML = "original element 2";
+  
+  function buttonPressed () {
+    but1.innerHTML = "pressed";
+    
+    flash("456");
+    performTask("beep",5);
+    const result = vibrate (1000);
+  }
+  
+  but1.addEventListener ("click", buttonPressed);
+&lt;/script&gt;</Str>
+			<Int sr="arg3" val="1"/>
+			<Int sr="arg4" val="1"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="1"/>
+			<Int sr="arg7" val="1"/>
+			<Str sr="arg8" ve="3"/>
+			<RectElement sr="background">
+				<flags>4</flags>
+				<geom>-1,-1,-1,-1,-1,-1,-1,-1</geom>
+				<Str sr="arg0" ve="3"/>
+				<Int sr="arg1" val="0"/>
+				<Str sr="arg2" ve="3">#4F1CC523</Str>
+				<Str sr="arg3" ve="3"/>
+				<Int sr="arg4" val="2"/>
+				<Str sr="arg5" ve="3">#FFE10D0D</Str>
+				<Int sr="arg6" val="0"/>
+				<Int sr="arg7" val="0"/>
+			</RectElement>
+		</WebElement>
+		<PropertiesElement sr="props">
+			<Int sr="arg0" val="1"/>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3">#FF3187AE</Str>
+			<Int sr="arg3" val="0"/>
+			<Str sr="arg4" ve="3">Popup</Str>
+			<Str sr="arg5" ve="3"/>
+			<Img sr="arg6" ve="2"/>
+			<Str sr="arg7" ve="3"/>
+		</PropertiesElement>
+	</Scene>
+	<Task sr="task10">
+		<cdate>1706788836777</cdate>
+		<edate>1733299691438</edate>
+		<id>10</id>
+		<nme>send telegram</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>547</code>
+			<label>please set message</label>
+			<se>false</se>
+			<Str sr="arg0" ve="3">%msg</Str>
+			<Str sr="arg1" ve="3">"hello world"</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>547</code>
+			<label>base</label>
+			<Str sr="arg0" ve="3">%base</Str>
+			<Str sr="arg1" ve="3">https://api.telegram.org/bot5081840937:AAGS3bp-Fci1gwAKgTWafNkVPi0731VQZg0/sendMessage?chat_id=6324343731&amp;parse_mode=HTML&amp;text=</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>547</code>
+			<label>whole</label>
+			<se>false</se>
+			<Str sr="arg0" ve="3">%whole</Str>
+			<Str sr="arg1" ve="3">%base%msg</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>339</code>
+			<label>send</label>
+			<se>false</se>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%http_cookies
+Cookies
+The cookies the server sent in the response in the Cookie:COOKIE_VALUE format. You can use this directly in the 'Headers' field of the HTTP Request action&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%http_data
+Data
+Data that the server responded from the HTTP request.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%http_file_output
+File Output
+Will always contain the file's full path even if you specified a directory as the File to save.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%http_response_code
+Response Code
+The HTTP Code the server responded&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;%http_headers()
+Response Headers
+The HTTP Headers the server sent in the response. Each header is in the 'key:value' format&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;%http_response_length
+Response Length
+The size of the response in bytes&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg10" val="0"/>
+			<Int sr="arg11" val="0"/>
+			<Int sr="arg12" val="1"/>
+			<Str sr="arg2" ve="3">%whole</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="30"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>37</code>
+			<coll>true</coll>
+			<label>if success</label>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%http_response_code</lhs>
+					<op>0</op>
+					<rhs>200</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>548</code>
+			<label>success</label>
+			<Str sr="arg0" ve="3">success</Str>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg10" ve="3"/>
+			<Int sr="arg11" val="1"/>
+			<Int sr="arg12" val="0"/>
+			<Str sr="arg13" ve="3"/>
+			<Int sr="arg14" val="0"/>
+			<Str sr="arg15" ve="3"/>
+			<Int sr="arg2" val="0"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Int sr="arg9" val="1"/>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>38</code>
+		</Action>
+		<Img sr="icn" ve="2">
+			<cls>org.telegram.messenger.DefaultIcon</cls>
+			<pkg>org.telegram.messenger</pkg>
+		</Img>
+	</Task>
+	<Task sr="task11">
+		<cdate>1723900904259</cdate>
+		<edate>1724379783900</edate>
+		<id>11</id>
+		<nme>reset file</nme>
+		<pri>100</pri>
+		<Kid sr="Kid">
+			<launchID>5</launchID>
+			<pkg>a.apk</pkg>
+			<vTarg>29</vTarg>
+			<vnme>1.0</vnme>
+			<vnum>2</vnum>
+		</Kid>
+		<Action sr="act0" ve="7">
+			<code>366</code>
+			<on>false</on>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%gl_latitude
+1. Latitude
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%gl_longitude
+2. Longitude
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%gl_coordinates_accuracy
+3. Lat, Lon Accuracy
+In meters&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%gl_altitude
+Altitude (meters)
+In meters&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;%gl_altitude_accuracy
+Altitude Accuracy
+In meters&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;%gl_bearing
+Bearing
+in the range 0.0–360.0; Horizontal direction of travel of this device; not related to the device orientation&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES6&gt;%gl_bearing_accuracy
+Bearing Accuracy
+In degrees&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES6&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES7&gt;%gl_map_url
+Google Maps URL
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES7&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES8&gt;%gl_coordinates
+Latitude and Longitude
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES8&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES9&gt;%gl_satellites
+Satellites
+The number of satellites used to derive the fix. May not always be available.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES9&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES10&gt;%gl_speed
+Speed
+In meters per second&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES10&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES11&gt;%gl_speed_accuracy
+Speed
+In meters per second&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES11&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES12&gt;%gl_time_seconds
+Time
+Time in seconds since EPOCH the location was gotten&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES12&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES13&gt;%gl_time_adjusted_milliseconds
+Time Adjusted Milliseconds
+Result of adding the current system time with the offset between the system time and the location time&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES13&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES14&gt;%gl_time_gnss_milliseconds
+Time GNSS Milliseconds
+Time in milliseconds since EPOCH the location was gotten synchrined to the device's location provider&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES14&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES15&gt;%gl_time_milliseconds
+Time Milliseconds
+Time in milliseconds since EPOCH the location was gotten&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES15&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES16&gt;%gl_time_offset_milliseconds
+Time Offset Milliseconds
+Time difference in milliseconds between the system time and the location time&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES16&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES17&gt;%gl_time_taken_millis
+Time Taken
+Time in milliseconds that it took for Tasker to get the location&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES17&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Int sr="arg1" val="30"/>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+			<Str sr="arg8" ve="3"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>129</code>
+			<Str sr="arg0" ve="3">var empty = [];
+var json = JSON.stringify(empty);
+var title = "file reset";
+var message = "reset to empty array";</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3" val="45"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>417</code>
+			<on>false</on>
+			<Str sr="arg0" ve="3">Download/tasker/gps.json</Str>
+			<Str sr="arg1" ve="3">%past</Str>
+			<Int sr="arg2" val="1"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>410</code>
+			<Str sr="arg0" ve="3">Download/tasker/gps.json</Str>
+			<Str sr="arg1" ve="3">%json</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>47</code>
+			<Str sr="arg0" ve="3">pop</Str>
+			<Int sr="arg1" val="3"/>
+			<Int sr="arg10" val="1"/>
+			<Int sr="arg2" val="100"/>
+			<Int sr="arg3" val="100"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="1"/>
+			<Int sr="arg7" val="1"/>
+			<Int sr="arg8" val="1"/>
+			<Int sr="arg9" val="1"/>
+		</Action>
+		<Img sr="icn" ve="2">
+			<nme>cust_star</nme>
+		</Img>
+	</Task>
+	<Task sr="task12">
+		<cdate>1723900904259</cdate>
+		<edate>1724144219445</edate>
+		<id>12</id>
+		<nme>read file for gps</nme>
+		<pri>100</pri>
+		<Kid sr="Kid">
+			<launchID>5</launchID>
+			<pkg>a.apk</pkg>
+			<vTarg>29</vTarg>
+			<vnme>1.0</vnme>
+			<vnum>2</vnum>
+		</Kid>
+		<Action sr="act0" ve="7">
+			<code>417</code>
+			<Str sr="arg0" ve="3">Download/tasker/gps.json</Str>
+			<Str sr="arg1" ve="3">%past</Str>
+			<Int sr="arg2" val="1"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>129</code>
+			<Str sr="arg0" ve="3">var json = JSON.parse(past);
+var title = "read";
+var message = JSON.stringify(json);</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3" val="45"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>47</code>
+			<se>false</se>
+			<Str sr="arg0" ve="3">pop</Str>
+			<Int sr="arg1" val="3"/>
+			<Int sr="arg10" val="1"/>
+			<Int sr="arg2" val="100"/>
+			<Int sr="arg3" val="100"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="1"/>
+			<Int sr="arg7" val="0"/>
+			<Int sr="arg8" val="1"/>
+			<Int sr="arg9" val="1"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>129</code>
+			<se>false</se>
+			<Str sr="arg0" ve="3">json = JSON.parse(past);
+title = "showing 2";
+message = json[2];</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3" val="45"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>47</code>
+			<Str sr="arg0" ve="3">pop</Str>
+			<Int sr="arg1" val="3"/>
+			<Int sr="arg10" val="1"/>
+			<Int sr="arg2" val="100"/>
+			<Int sr="arg3" val="100"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="1"/>
+			<Int sr="arg7" val="0"/>
+			<Int sr="arg8" val="1"/>
+			<Int sr="arg9" val="1"/>
+		</Action>
+		<Img sr="icn" ve="2">
+			<nme>cust_star</nme>
+		</Img>
+	</Task>
+	<Task sr="task13">
+		<cdate>1724319554442</cdate>
+		<edate>1724376173776</edate>
+		<id>13</id>
+		<nme>beep</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>171</code>
+			<Int sr="arg0" val="8000"/>
+			<Int sr="arg1" val="200"/>
+			<Int sr="arg2" val="5"/>
+			<Int sr="arg3" val="3"/>
+			<Str sr="arg4" ve="3"/>
+		</Action>
+	</Task>
+	<Task sr="task15">
+		<cdate>1723875527763</cdate>
+		<edate>1723875527763</edate>
+		<id>15</id>
+		<pri>102</pri>
+		<Action sr="act0" ve="7">
+			<code>129</code>
+			<label>eval (script)</label>
+			<on>false</on>
+			<se>false</se>
+			<Str sr="arg0" ve="3">flash (script);
+eval (script);</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3" val="10"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>171</code>
+			<on>false</on>
+			<Int sr="arg0" val="8000"/>
+			<Int sr="arg1" val="1000"/>
+			<Int sr="arg2" val="50"/>
+			<Int sr="arg3" val="3"/>
+			<Str sr="arg4" ve="3"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>130</code>
+			<on>false</on>
+			<Str sr="arg0" ve="3">test Beep</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Int sr="arg10" val="1"/>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task17">
+		<cdate>1723875527763</cdate>
+		<edate>1723875527763</edate>
+		<id>17</id>
+		<pri>102</pri>
+		<Action sr="act0" ve="7">
+			<code>49</code>
+			<label>destroy scene</label>
+			<Str sr="arg0" ve="3">popup</Str>
+		</Action>
+	</Task>
+	<Task sr="task18">
+		<cdate>1724202785770</cdate>
+		<edate>1724210174594</edate>
+		<id>18</id>
+		<nme>==============</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>129</code>
+			<Str sr="arg0" ve="3">var arr =[]
+arr[0] = "abc";
+arr[1] = "def";
+var message = arr[1];</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3" val="45"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%message</Str>
+			<Str sr="arg1" ve="3">%arr()</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>47</code>
+			<Str sr="arg0" ve="3">pop</Str>
+			<Int sr="arg1" val="3"/>
+			<Int sr="arg10" val="1"/>
+			<Int sr="arg2" val="100"/>
+			<Int sr="arg3" val="100"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="1"/>
+			<Int sr="arg7" val="1"/>
+			<Int sr="arg8" val="1"/>
+			<Int sr="arg9" val="1"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>129</code>
+			<on>false</on>
+			<Str sr="arg0" ve="3">flash(arr());</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3" val="45"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>548</code>
+			<Str sr="arg0" ve="3">%arr()</Str>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg10" ve="3"/>
+			<Int sr="arg11" val="1"/>
+			<Int sr="arg12" val="0"/>
+			<Str sr="arg13" ve="3"/>
+			<Int sr="arg14" val="0"/>
+			<Str sr="arg15" ve="3"/>
+			<Int sr="arg2" val="0"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Int sr="arg9" val="1"/>
+		</Action>
+	</Task>
+	<Task sr="task19">
+		<cdate>1723875527763</cdate>
+		<edate>1723875527763</edate>
+		<id>19</id>
+		<pri>108</pri>
+		<Action sr="act0" ve="7">
+			<code>129</code>
+			<label>eval (script)</label>
+			<on>false</on>
+			<se>false</se>
+			<Str sr="arg0" ve="3">flash (script);
+eval (script);</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3" val="10"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>171</code>
+			<on>false</on>
+			<Int sr="arg0" val="8000"/>
+			<Int sr="arg1" val="1000"/>
+			<Int sr="arg2" val="50"/>
+			<Int sr="arg3" val="3"/>
+			<Str sr="arg4" ve="3"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>130</code>
+			<on>false</on>
+			<Str sr="arg0" ve="3">test Beep</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Int sr="arg10" val="1"/>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>129</code>
+			<Str sr="arg0" ve="3">title = "next";</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3" val="45"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>49</code>
+			<Str sr="arg0" ve="3">pop</Str>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>47</code>
+			<Str sr="arg0" ve="3">pop</Str>
+			<Int sr="arg1" val="3"/>
+			<Int sr="arg10" val="1"/>
+			<Int sr="arg2" val="100"/>
+			<Int sr="arg3" val="100"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="1"/>
+			<Int sr="arg7" val="1"/>
+			<Int sr="arg8" val="1"/>
+			<Int sr="arg9" val="1"/>
+		</Action>
+	</Task>
+	<Task sr="task2">
+		<cdate>1705667311531</cdate>
+		<edate>1723887023529</edate>
+		<id>2</id>
+		<pri>6</pri>
+		<Action sr="act0" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">down (25/100)</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Int sr="arg10" val="1"/>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task20">
+		<cdate>1723875527763</cdate>
+		<edate>1723875527763</edate>
+		<id>20</id>
+		<pri>102</pri>
+		<Action sr="act0" ve="7">
+			<code>49</code>
+			<label>destroy scene</label>
+			<Str sr="arg0" ve="3">video</Str>
+		</Action>
+	</Task>
+	<Task sr="task22">
+		<cdate>1724235951039</cdate>
+		<edate>1724235951039</edate>
+		<id>22</id>
+		<pri>102</pri>
+		<Action sr="act0" ve="7">
+			<code>612</code>
+			<Str sr="arg0" ve="3">video</Str>
+			<Str sr="arg1" ve="3">Video</Str>
+			<Int sr="arg2" val="3"/>
+			<Str sr="arg3" ve="3"/>
+		</Action>
+	</Task>
+	<Task sr="task23">
+		<cdate>1723875527763</cdate>
+		<edate>1723875527763</edate>
+		<id>23</id>
+		<pri>108</pri>
+		<Action sr="act0" ve="7">
+			<code>129</code>
+			<label>eval (script)</label>
+			<on>false</on>
+			<se>false</se>
+			<Str sr="arg0" ve="3">flash (script);
+eval (script);</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3" val="10"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>171</code>
+			<on>false</on>
+			<Int sr="arg0" val="8000"/>
+			<Int sr="arg1" val="1000"/>
+			<Int sr="arg2" val="50"/>
+			<Int sr="arg3" val="3"/>
+			<Str sr="arg4" ve="3"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>130</code>
+			<on>false</on>
+			<Str sr="arg0" ve="3">test Beep</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Int sr="arg10" val="1"/>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>129</code>
+			<Str sr="arg0" ve="3">title = "next";</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3" val="45"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>49</code>
+			<Str sr="arg0" ve="3">pop</Str>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>47</code>
+			<Str sr="arg0" ve="3">pop</Str>
+			<Int sr="arg1" val="3"/>
+			<Int sr="arg10" val="1"/>
+			<Int sr="arg2" val="100"/>
+			<Int sr="arg3" val="100"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="1"/>
+			<Int sr="arg7" val="1"/>
+			<Int sr="arg8" val="1"/>
+			<Int sr="arg9" val="1"/>
+		</Action>
+	</Task>
+	<Task sr="task24">
+		<cdate>1723875527763</cdate>
+		<edate>1723875527763</edate>
+		<id>24</id>
+		<pri>102</pri>
+		<Action sr="act0" ve="7">
+			<code>49</code>
+			<label>destroy scene</label>
+			<Str sr="arg0" ve="3">video</Str>
+		</Action>
+	</Task>
+	<Task sr="task26">
+		<cdate>1733299929983</cdate>
+		<edate>1733305162333</edate>
+		<id>26</id>
+		<Action sr="act0" ve="7">
+			<code>339</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%http_cookies
+Cookies
+The cookies the server sent in the response in the Cookie:COOKIE_VALUE format. You can use this directly in the 'Headers' field of the HTTP Request action&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%http_data
+Data
+Data that the server responded from the HTTP request.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%http_file_output
+File Output
+Will always contain the file's full path even if you specified a directory as the File to save.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%http_response_code
+Response Code
+The HTTP Code the server responded&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;%http_headers()
+Response Headers
+The HTTP Headers the server sent in the response. Each header is in the 'key:value' format&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;%http_response_length
+Response Length
+The size of the response in bytes&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg10" val="0"/>
+			<Int sr="arg11" val="0"/>
+			<Int sr="arg12" val="1"/>
+			<Str sr="arg2" ve="3">https://api.telegram.org/bot5081840937:AAGS3bp-Fci1gwAKgTWafNkVPi0731VQZg0/sendMessage?chat_id=1831550950&amp;parse_mode=HTML&amp;text=redphone+battery+below+20%</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="30"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task27">
+		<cdate>1733300063398</cdate>
+		<edate>1733300135773</edate>
+		<id>27</id>
+		<Action sr="act0" ve="7">
+			<code>339</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%http_cookies
+Cookies
+The cookies the server sent in the response in the Cookie:COOKIE_VALUE format. You can use this directly in the 'Headers' field of the HTTP Request action&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%http_data
+Data
+Data that the server responded from the HTTP request.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%http_file_output
+File Output
+Will always contain the file's full path even if you specified a directory as the File to save.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%http_response_code
+Response Code
+The HTTP Code the server responded&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;%http_headers()
+Response Headers
+The HTTP Headers the server sent in the response. Each header is in the 'key:value' format&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;%http_response_length
+Response Length
+The size of the response in bytes&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg10" val="0"/>
+			<Int sr="arg11" val="0"/>
+			<Int sr="arg12" val="1"/>
+			<Str sr="arg2" ve="3">https://api.telegram.org/bot5081840937:AAGS3bp-Fci1gwAKgTWafNkVPi0731VQZg0/sendMessage?chat_id=1831550950&amp;parse_mode=HTML&amp;text=RedPhone+battery+below+50%</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="30"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task28">
+		<cdate>1723875527763</cdate>
+		<edate>1723875527763</edate>
+		<id>28</id>
+		<pri>108</pri>
+		<Action sr="act0" ve="7">
+			<code>129</code>
+			<label>eval (script)</label>
+			<on>false</on>
+			<se>false</se>
+			<Str sr="arg0" ve="3">flash (script);
+eval (script);</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3" val="10"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>171</code>
+			<on>false</on>
+			<Int sr="arg0" val="8000"/>
+			<Int sr="arg1" val="1000"/>
+			<Int sr="arg2" val="50"/>
+			<Int sr="arg3" val="3"/>
+			<Str sr="arg4" ve="3"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>130</code>
+			<on>false</on>
+			<Str sr="arg0" ve="3">test Beep</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Int sr="arg10" val="1"/>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>129</code>
+			<on>false</on>
+			<Str sr="arg0" ve="3">title = "next";</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3" val="45"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>49</code>
+			<Str sr="arg0" ve="3">pop</Str>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>47</code>
+			<on>false</on>
+			<Str sr="arg0" ve="3">pop</Str>
+			<Int sr="arg1" val="3"/>
+			<Int sr="arg10" val="1"/>
+			<Int sr="arg2" val="100"/>
+			<Int sr="arg3" val="100"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="1"/>
+			<Int sr="arg7" val="1"/>
+			<Int sr="arg8" val="1"/>
+			<Int sr="arg9" val="1"/>
+		</Action>
+	</Task>
+	<Task sr="task29">
+		<cdate>1723875527763</cdate>
+		<edate>1723875527763</edate>
+		<id>29</id>
+		<pri>102</pri>
+		<Action sr="act0" ve="7">
+			<code>49</code>
+			<label>destroy scene</label>
+			<Str sr="arg0" ve="3">web</Str>
+		</Action>
+	</Task>
+	<Task sr="task3">
+		<cdate>1723766435216</cdate>
+		<edate>1723951464905</edate>
+		<id>3</id>
+		<nme>dialog</nme>
+		<pri>100</pri>
+		<Kid sr="Kid">
+			<launchID>3</launchID>
+			<pkg>abc.apk</pkg>
+			<vTarg>29</vTarg>
+			<vnme>1.0</vnme>
+		</Kid>
+		<Action sr="act0" ve="7">
+			<code>129</code>
+			<label>set %title %message %script</label>
+			<se>false</se>
+			<Str sr="arg0" ve="3">var title = head;
+var message = body;
+var script = "vibrate(1000);";
+
+//var obj = {fff: 666, hhh:"ddd"};
+//obj = [55, 77, 'hhh'];
+//message = JSON.stringify(obj);</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3" val="10"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>47</code>
+			<label>show scene POPUP</label>
+			<se>false</se>
+			<Str sr="arg0" ve="3">popup</Str>
+			<Int sr="arg1" val="3"/>
+			<Int sr="arg10" val="1"/>
+			<Int sr="arg2" val="100"/>
+			<Int sr="arg3" val="100"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="1"/>
+			<Int sr="arg7" val="1"/>
+			<Int sr="arg8" val="1"/>
+			<Int sr="arg9" val="1"/>
+		</Action>
+		<Img sr="icn" ve="2">
+			<cls>com.google.android.apps.chrome.Main</cls>
+			<pkg>com.brave.browser</pkg>
+		</Img>
+	</Task>
+	<Task sr="task30">
+		<cdate>1724293464485</cdate>
+		<edate>1724381358811</edate>
+		<id>30</id>
+		<nme>web</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>129</code>
+			<Str sr="arg0" ve="3">performTask("beep",5)</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3" val="45"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>47</code>
+			<Str sr="arg0" ve="3">web</Str>
+			<Int sr="arg1" val="3"/>
+			<Int sr="arg10" val="1"/>
+			<Int sr="arg2" val="100"/>
+			<Int sr="arg3" val="100"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="1"/>
+			<Int sr="arg7" val="1"/>
+			<Int sr="arg8" val="1"/>
+			<Int sr="arg9" val="1"/>
+		</Action>
+		<Img sr="icn" ve="2">
+			<cls>com.google.android.maps.MapsActivity</cls>
+			<pkg>com.google.android.apps.maps</pkg>
+		</Img>
+	</Task>
+	<Task sr="task31">
+		<cdate>1733300144063</cdate>
+		<edate>1733300171331</edate>
+		<id>31</id>
+		<Action sr="act0" ve="7">
+			<code>339</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%http_cookies
+Cookies
+The cookies the server sent in the response in the Cookie:COOKIE_VALUE format. You can use this directly in the 'Headers' field of the HTTP Request action&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%http_data
+Data
+Data that the server responded from the HTTP request.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%http_file_output
+File Output
+Will always contain the file's full path even if you specified a directory as the File to save.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%http_response_code
+Response Code
+The HTTP Code the server responded&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;%http_headers()
+Response Headers
+The HTTP Headers the server sent in the response. Each header is in the 'key:value' format&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;%http_response_length
+Response Length
+The size of the response in bytes&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg10" val="0"/>
+			<Int sr="arg11" val="0"/>
+			<Int sr="arg12" val="1"/>
+			<Str sr="arg2" ve="3">https://api.telegram.org/bot5081840937:AAGS3bp-Fci1gwAKgTWafNkVPi0731VQZg0/sendMessage?chat_id=1831550950&amp;parse_mode=HTML&amp;text=RedPhone+battery+above+50%</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="30"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task32">
+		<cdate>1733300284881</cdate>
+		<edate>1733305170471</edate>
+		<id>32</id>
+		<Action sr="act0" ve="7">
+			<code>339</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%http_cookies
+Cookies
+The cookies the server sent in the response in the Cookie:COOKIE_VALUE format. You can use this directly in the 'Headers' field of the HTTP Request action&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%http_data
+Data
+Data that the server responded from the HTTP request.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%http_file_output
+File Output
+Will always contain the file's full path even if you specified a directory as the File to save.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%http_response_code
+Response Code
+The HTTP Code the server responded&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;%http_headers()
+Response Headers
+The HTTP Headers the server sent in the response. Each header is in the 'key:value' format&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;%http_response_length
+Response Length
+The size of the response in bytes&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg10" val="0"/>
+			<Int sr="arg11" val="0"/>
+			<Int sr="arg12" val="1"/>
+			<Str sr="arg2" ve="3">https://api.telegram.org/bot5081840937:AAGS3bp-Fci1gwAKgTWafNkVPi0731VQZg0/sendMessage?chat_id=1831550950&amp;parse_mode=HTML&amp;text=RedPhone+battery+above+20%</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="30"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+	</Task>
+	<Task sr="task33">
+		<cdate>1700182370440</cdate>
+		<edate>1723900535346</edate>
+		<id>33</id>
+		<nme>down (25/100)</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>171</code>
+			<Int sr="arg0" val="9000"/>
+			<Int sr="arg1" val="500"/>
+			<Int sr="arg2" val="25"/>
+			<Int sr="arg3" val="5"/>
+			<Str sr="arg4" ve="3"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>171</code>
+			<Int sr="arg0" val="7000"/>
+			<Int sr="arg1" val="500"/>
+			<Int sr="arg2" val="25"/>
+			<Int sr="arg3" val="5"/>
+			<Str sr="arg4" ve="3"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>171</code>
+			<Int sr="arg0" val="5000"/>
+			<Int sr="arg1" val="500"/>
+			<Int sr="arg2" val="25"/>
+			<Int sr="arg3" val="5"/>
+			<Str sr="arg4" ve="3"/>
+		</Action>
+	</Task>
+	<Task sr="task37">
+		<cdate>1723708208480</cdate>
+		<edate>1729604524913</edate>
+		<id>37</id>
+		<nme>processNotification</nme>
+		<pri>6</pri>
+		<Action sr="act0" ve="7">
+			<code>37</code>
+			<coll>false</coll>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%evtprm1</lhs>
+					<op>1</op>
+					<rhs>android</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>129</code>
+			<label>show parameters</label>
+			<on>false</on>
+			<Str sr="arg0" ve="3">const msg = local ('evtprm3');
+flash ("msg = " + msg);
+// setGlobal('PARAM1', msg);</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3" val="45"/>
+		</Action>
+		<Action sr="act10" ve="7">
+			<code>129</code>
+			<label>whatsapp call incoming</label>
+			<Str sr="arg0" ve="3">var apps = local('evtprm1');
+flash (apps);</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3" val="45"/>
+			<ConditionList sr="if">
+				<bool0>And</bool0>
+				<Condition sr="c0" ve="3">
+					<lhs>%evtprm3</lhs>
+					<op>2</op>
+					<rhs>*incoming voice call*</rhs>
+				</Condition>
+				<Condition sr="c1" ve="3">
+					<lhs>%evtprm1</lhs>
+					<op>2</op>
+					<rhs>com.whatsapp</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act11" ve="7">
+			<code>135</code>
+			<Int sr="arg0" val="1"/>
+			<Int sr="arg1" val="1"/>
+			<Str sr="arg2" ve="3">beep 975</Str>
+			<ConditionList sr="if">
+				<bool0>And</bool0>
+				<Condition sr="c0" ve="3">
+					<lhs>%evtprm3</lhs>
+					<op>2</op>
+					<rhs>*incoming voice call*</rhs>
+				</Condition>
+				<Condition sr="c1" ve="3">
+					<lhs>%evtprm1</lhs>
+					<op>2</op>
+					<rhs>com.whatsapp</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act12" ve="7">
+			<code>129</code>
+			<label>whatsapp business call incoming</label>
+			<Str sr="arg0" ve="3">var apps = local('evtprm1');
+flash (apps);</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3" val="45"/>
+			<ConditionList sr="if">
+				<bool0>And</bool0>
+				<Condition sr="c0" ve="3">
+					<lhs>%evtprm3</lhs>
+					<op>2</op>
+					<rhs>*incoming voice call*</rhs>
+				</Condition>
+				<Condition sr="c1" ve="3">
+					<lhs>%evtprm1</lhs>
+					<op>2</op>
+					<rhs>com.whatsapp.w4b</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act13" ve="7">
+			<code>135</code>
+			<Int sr="arg0" val="1"/>
+			<Int sr="arg1" val="1"/>
+			<Str sr="arg2" ve="3">beep 975</Str>
+			<ConditionList sr="if">
+				<bool0>And</bool0>
+				<Condition sr="c0" ve="3">
+					<lhs>%evtprm3</lhs>
+					<op>2</op>
+					<rhs>*incoming voice call*</rhs>
+				</Condition>
+				<Condition sr="c1" ve="3">
+					<lhs>%evtprm1</lhs>
+					<op>2</op>
+					<rhs>com.whatsapp.w4b</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act14" ve="7">
+			<code>129</code>
+			<label>whatsapp</label>
+			<Str sr="arg0" ve="3">var apps = local('evtprm1');
+flash (apps);</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3" val="45"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%evtprm1</lhs>
+					<op>2</op>
+					<rhs>com.whatsapp</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act15" ve="7">
+			<code>135</code>
+			<Int sr="arg0" val="1"/>
+			<Int sr="arg1" val="1"/>
+			<Str sr="arg2" ve="3">beep 975</Str>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%evtprm1</lhs>
+					<op>2</op>
+					<rhs>com.whatsapp</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act16" ve="7">
+			<code>129</code>
+			<label>whatsapp business</label>
+			<Str sr="arg0" ve="3">var apps = local('evtprm1');
+flash (apps);</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3" val="45"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%evtprm1</lhs>
+					<op>2</op>
+					<rhs>com.whatsapp.w4b</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act17" ve="7">
+			<code>135</code>
+			<Int sr="arg0" val="1"/>
+			<Int sr="arg1" val="1"/>
+			<Str sr="arg2" ve="3">beep 975</Str>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%evtprm1</lhs>
+					<op>2</op>
+					<rhs>com.whatsapp.w4b</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act18" ve="7">
+			<code>129</code>
+			<label>missed phone call</label>
+			<Str sr="arg0" ve="3">var apps = local('evtprm1');
+flash (apps);</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3" val="45"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%evtprm1</lhs>
+					<op>2</op>
+					<rhs>com.android.server.telecom</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act19" ve="7">
+			<code>135</code>
+			<Int sr="arg0" val="1"/>
+			<Int sr="arg1" val="1"/>
+			<Str sr="arg2" ve="3">beep 975</Str>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%evtprm1</lhs>
+					<op>2</op>
+					<rhs>com.android.server.telecom</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>129</code>
+			<label>phone calling</label>
+			<Str sr="arg0" ve="3">var apps = local('evtprm1');
+flash (apps);</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3" val="45"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%evtprm1</lhs>
+					<op>2</op>
+					<rhs>com.android.incallui</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act20" ve="7">
+			<code>129</code>
+			<label>email (spark)</label>
+			<on>false</on>
+			<Str sr="arg0" ve="3">var apps = local('evtprm1');
+flash (apps);</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3" val="45"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%evtprm1</lhs>
+					<op>2</op>
+					<rhs>com.readdle.spark</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act21" ve="7">
+			<code>135</code>
+			<on>false</on>
+			<Int sr="arg0" val="1"/>
+			<Int sr="arg1" val="1"/>
+			<Str sr="arg2" ve="3">beep 975</Str>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%evtprm1</lhs>
+					<op>2</op>
+					<rhs>com.readdle.spark</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act22" ve="7">
+			<code>38</code>
+		</Action>
+		<Action sr="act23" ve="7">
+			<code>137</code>
+			<label>STOP</label>
+			<Int sr="arg0" val="0"/>
+			<Str sr="arg1" ve="3"/>
+		</Action>
+		<Action sr="act24" ve="7">
+			<code>300</code>
+			<label>beep 555</label>
+		</Action>
+		<Action sr="act25" ve="7">
+			<code>171</code>
+			<Int sr="arg0" val="5000"/>
+			<Int sr="arg1" val="500"/>
+			<Int sr="arg2" val="25"/>
+			<Int sr="arg3" val="5"/>
+			<Str sr="arg4" ve="3"/>
+		</Action>
+		<Action sr="act26" ve="7">
+			<code>171</code>
+			<Int sr="arg0" val="5000"/>
+			<Int sr="arg1" val="500"/>
+			<Int sr="arg2" val="25"/>
+			<Int sr="arg3" val="5"/>
+			<Str sr="arg4" ve="3"/>
+		</Action>
+		<Action sr="act27" ve="7">
+			<code>171</code>
+			<Int sr="arg0" val="5000"/>
+			<Int sr="arg1" val="500"/>
+			<Int sr="arg2" val="25"/>
+			<Int sr="arg3" val="5"/>
+			<Str sr="arg4" ve="3"/>
+		</Action>
+		<Action sr="act28" ve="7">
+			<code>137</code>
+			<label>stop</label>
+			<Int sr="arg0" val="0"/>
+			<Str sr="arg1" ve="3"/>
+		</Action>
+		<Action sr="act29" ve="7">
+			<code>300</code>
+			<label>beep 999</label>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>135</code>
+			<Int sr="arg0" val="1"/>
+			<Int sr="arg1" val="1"/>
+			<Str sr="arg2" ve="3">beep 975</Str>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%evtprm1</lhs>
+					<op>2</op>
+					<rhs>com.android.incallui</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act30" ve="7">
+			<code>171</code>
+			<Int sr="arg0" val="9000"/>
+			<Int sr="arg1" val="500"/>
+			<Int sr="arg2" val="25"/>
+			<Int sr="arg3" val="5"/>
+			<Str sr="arg4" ve="3"/>
+		</Action>
+		<Action sr="act31" ve="7">
+			<code>171</code>
+			<Int sr="arg0" val="9000"/>
+			<Int sr="arg1" val="500"/>
+			<Int sr="arg2" val="25"/>
+			<Int sr="arg3" val="5"/>
+			<Str sr="arg4" ve="3"/>
+		</Action>
+		<Action sr="act32" ve="7">
+			<code>171</code>
+			<Int sr="arg0" val="9000"/>
+			<Int sr="arg1" val="500"/>
+			<Int sr="arg2" val="25"/>
+			<Int sr="arg3" val="5"/>
+			<Str sr="arg4" ve="3"/>
+		</Action>
+		<Action sr="act33" ve="7">
+			<code>137</code>
+			<label>stop</label>
+			<Int sr="arg0" val="0"/>
+			<Str sr="arg1" ve="3"/>
+		</Action>
+		<Action sr="act34" ve="7">
+			<code>300</code>
+			<label>beep 975</label>
+		</Action>
+		<Action sr="act35" ve="7">
+			<code>171</code>
+			<Int sr="arg0" val="9000"/>
+			<Int sr="arg1" val="500"/>
+			<Int sr="arg2" val="25"/>
+			<Int sr="arg3" val="5"/>
+			<Str sr="arg4" ve="3"/>
+		</Action>
+		<Action sr="act36" ve="7">
+			<code>171</code>
+			<Int sr="arg0" val="7000"/>
+			<Int sr="arg1" val="500"/>
+			<Int sr="arg2" val="25"/>
+			<Int sr="arg3" val="5"/>
+			<Str sr="arg4" ve="3"/>
+		</Action>
+		<Action sr="act37" ve="7">
+			<code>171</code>
+			<Int sr="arg0" val="5000"/>
+			<Int sr="arg1" val="500"/>
+			<Int sr="arg2" val="25"/>
+			<Int sr="arg3" val="5"/>
+			<Str sr="arg4" ve="3"/>
+		</Action>
+		<Action sr="act38" ve="7">
+			<code>137</code>
+			<label>stop</label>
+			<Int sr="arg0" val="0"/>
+			<Str sr="arg1" ve="3"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>129</code>
+			<label>??? phone calling</label>
+			<Str sr="arg0" ve="3">var apps = local('evtprm1');
+flash (apps);</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3" val="45"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%evtprm1</lhs>
+					<op>2</op>
+					<rhs>com.android.phone</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>135</code>
+			<Int sr="arg0" val="1"/>
+			<Int sr="arg1" val="1"/>
+			<Str sr="arg2" ve="3">beep 975</Str>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%evtprm1</lhs>
+					<op>2</op>
+					<rhs>com.android.phone</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>129</code>
+			<label>whatsapp call missed</label>
+			<Str sr="arg0" ve="3">var apps = local('evtprm1');
+flash (apps);</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3" val="45"/>
+			<ConditionList sr="if">
+				<bool0>And</bool0>
+				<Condition sr="c0" ve="3">
+					<lhs>%evtprm3</lhs>
+					<op>2</op>
+					<rhs>*issed voice call*</rhs>
+				</Condition>
+				<Condition sr="c1" ve="3">
+					<lhs>%evtprm1</lhs>
+					<op>2</op>
+					<rhs>com.whatsapp</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act7" ve="7">
+			<code>135</code>
+			<Int sr="arg0" val="1"/>
+			<Int sr="arg1" val="1"/>
+			<Str sr="arg2" ve="3">beep 975</Str>
+			<ConditionList sr="if">
+				<bool0>And</bool0>
+				<Condition sr="c0" ve="3">
+					<lhs>%evtprm3</lhs>
+					<op>2</op>
+					<rhs>*issed voice call*</rhs>
+				</Condition>
+				<Condition sr="c1" ve="3">
+					<lhs>%evtprm1</lhs>
+					<op>2</op>
+					<rhs>com.whatsapp</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act8" ve="7">
+			<code>129</code>
+			<label>whatsapp business call missed</label>
+			<Str sr="arg0" ve="3">var apps = local('evtprm1');
+flash (apps);</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3" val="45"/>
+			<ConditionList sr="if">
+				<bool0>And</bool0>
+				<Condition sr="c0" ve="3">
+					<lhs>%evtprm3</lhs>
+					<op>2</op>
+					<rhs>*issed voice call*</rhs>
+				</Condition>
+				<Condition sr="c1" ve="3">
+					<lhs>%evtprm1</lhs>
+					<op>2</op>
+					<rhs>com.whatsapp.w4b</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act9" ve="7">
+			<code>135</code>
+			<Int sr="arg0" val="1"/>
+			<Int sr="arg1" val="1"/>
+			<Str sr="arg2" ve="3">beep 975</Str>
+			<ConditionList sr="if">
+				<bool0>And</bool0>
+				<Condition sr="c0" ve="3">
+					<lhs>%evtprm3</lhs>
+					<op>2</op>
+					<rhs>*issed voice call*</rhs>
+				</Condition>
+				<Condition sr="c1" ve="3">
+					<lhs>%evtprm1</lhs>
+					<op>2</op>
+					<rhs>com.whatsapp.w4b</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Img sr="icn" ve="2">
+			<cls>group.flowbird.mpp.activities.SplashActivity</cls>
+			<pkg>hktd.flowbirdapp.com</pkg>
+		</Img>
+	</Task>
+	<Task sr="task4">
+		<cdate>1723875527763</cdate>
+		<edate>1723875527763</edate>
+		<id>4</id>
+		<pri>108</pri>
+		<Action sr="act0" ve="7">
+			<code>129</code>
+			<label>eval (script)</label>
+			<on>false</on>
+			<se>false</se>
+			<Str sr="arg0" ve="3">flash (script);
+eval (script);</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3" val="10"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>171</code>
+			<on>false</on>
+			<Int sr="arg0" val="8000"/>
+			<Int sr="arg1" val="1000"/>
+			<Int sr="arg2" val="50"/>
+			<Int sr="arg3" val="3"/>
+			<Str sr="arg4" ve="3"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>130</code>
+			<on>false</on>
+			<Str sr="arg0" ve="3">test Beep</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Int sr="arg10" val="1"/>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>129</code>
+			<Str sr="arg0" ve="3">title = "next";</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3" val="45"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>49</code>
+			<Str sr="arg0" ve="3">pop</Str>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>47</code>
+			<Str sr="arg0" ve="3">pop</Str>
+			<Int sr="arg1" val="3"/>
+			<Int sr="arg10" val="1"/>
+			<Int sr="arg2" val="100"/>
+			<Int sr="arg3" val="100"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="1"/>
+			<Int sr="arg7" val="1"/>
+			<Int sr="arg8" val="1"/>
+			<Int sr="arg9" val="1"/>
+		</Action>
+	</Task>
+	<Task sr="task44">
+		<cdate>1696501099838</cdate>
+		<edate>1723887017424</edate>
+		<id>44</id>
+		<pri>6</pri>
+		<Action sr="act0" ve="7">
+			<code>130</code>
+			<label>if 3~*missed voice call*</label>
+			<Str sr="arg0" ve="3">up&amp;down (25/100)</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Int sr="arg10" val="1"/>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%evtprm3</lhs>
+					<op>2</op>
+					<rhs>*issed voice call*</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+	</Task>
+	<Task sr="task5">
+		<cdate>1723900904259</cdate>
+		<edate>1724210422889</edate>
+		<id>5</id>
+		<nme>show dialog</nme>
+		<pri>100</pri>
+		<Kid sr="Kid">
+			<launchID>5</launchID>
+			<pkg>a.apk</pkg>
+			<vTarg>29</vTarg>
+			<vnme>1.0</vnme>
+			<vnum>2</vnum>
+		</Kid>
+		<Action sr="act0" ve="7">
+			<code>171</code>
+			<on>false</on>
+			<Int sr="arg0" val="8000"/>
+			<Int sr="arg1" val="1000"/>
+			<Int sr="arg2" val="50"/>
+			<Int sr="arg3" val="3"/>
+			<Str sr="arg4" ve="3"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>366</code>
+			<on>false</on>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%gl_latitude
+1. Latitude
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%gl_longitude
+2. Longitude
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%gl_coordinates_accuracy
+3. Lat, Lon Accuracy
+In meters&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%gl_altitude
+Altitude (meters)
+In meters&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;%gl_altitude_accuracy
+Altitude Accuracy
+In meters&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;%gl_bearing
+Bearing
+in the range 0.0–360.0; Horizontal direction of travel of this device; not related to the device orientation&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES6&gt;%gl_bearing_accuracy
+Bearing Accuracy
+In degrees&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES6&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES7&gt;%gl_map_url
+Google Maps URL
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES7&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES8&gt;%gl_coordinates
+Latitude and Longitude
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES8&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES9&gt;%gl_satellites
+Satellites
+The number of satellites used to derive the fix. May not always be available.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES9&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES10&gt;%gl_speed
+Speed
+In meters per second&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES10&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES11&gt;%gl_speed_accuracy
+Speed
+In meters per second&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES11&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES12&gt;%gl_time_seconds
+Time
+Time in seconds since EPOCH the location was gotten&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES12&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES13&gt;%gl_time_adjusted_milliseconds
+Time Adjusted Milliseconds
+Result of adding the current system time with the offset between the system time and the location time&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES13&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES14&gt;%gl_time_gnss_milliseconds
+Time GNSS Milliseconds
+Time in milliseconds since EPOCH the location was gotten synchrined to the device's location provider&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES14&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES15&gt;%gl_time_milliseconds
+Time Milliseconds
+Time in milliseconds since EPOCH the location was gotten&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES15&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES16&gt;%gl_time_offset_milliseconds
+Time Offset Milliseconds
+Time difference in milliseconds between the system time and the location time&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES16&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES17&gt;%gl_time_taken_millis
+Time Taken
+Time in milliseconds that it took for Tasker to get the location&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES17&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Int sr="arg1" val="30"/>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+			<Str sr="arg8" ve="3"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>547</code>
+			<on>false</on>
+			<Str sr="arg0" ve="3">%head</Str>
+			<Str sr="arg1" ve="3">%gl_latitude</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>547</code>
+			<on>false</on>
+			<Str sr="arg0" ve="3">%body</Str>
+			<Str sr="arg1" ve="3">%gl_longitude</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>130</code>
+			<on>false</on>
+			<Str sr="arg0" ve="3">dialog</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Int sr="arg10" val="1"/>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="1"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>129</code>
+			<Str sr="arg0" ve="3">var dddd = "ball";
+var abcd = "wonderful";
+var text = "hello";
+text = "&amp;&amp;&amp;";
+text = `abc
+def
+${abcd}
+ghi`;
+//const aaa = "constant);
+//text = aaa;
+setLocal('title', 666);
+setLocal('message', text);</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3" val="45"/>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>47</code>
+			<Str sr="arg0" ve="3">pop</Str>
+			<Int sr="arg1" val="4"/>
+			<Int sr="arg10" val="1"/>
+			<Int sr="arg2" val="100"/>
+			<Int sr="arg3" val="100"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="1"/>
+			<Int sr="arg7" val="1"/>
+			<Int sr="arg8" val="1"/>
+			<Int sr="arg9" val="1"/>
+		</Action>
+		<Img sr="icn" ve="2">
+			<nme>cust_star</nme>
+		</Img>
+	</Task>
+	<Task sr="task56">
+		<cdate>1696607218745</cdate>
+		<edate>1699488538140</edate>
+		<id>56</id>
+		<pri>6</pri>
+		<Action sr="act0" ve="7">
+			<code>171</code>
+			<on>false</on>
+			<Int sr="arg0" val="8000"/>
+			<Int sr="arg1" val="4500"/>
+			<Int sr="arg2" val="3"/>
+			<Int sr="arg3" val="4"/>
+			<Str sr="arg4" ve="3"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>548</code>
+			<se>false</se>
+			<Str sr="arg0" ve="3">something</Str>
+			<Int sr="arg1" val="1"/>
+			<Str sr="arg10" ve="3"/>
+			<Int sr="arg11" val="1"/>
+			<Int sr="arg12" val="1"/>
+			<Str sr="arg13" ve="3">Top,40,200</Str>
+			<Int sr="arg14" val="0"/>
+			<Str sr="arg15" ve="3"/>
+			<Int sr="arg2" val="1"/>
+			<Str sr="arg3" ve="3">%evtprm3</Str>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3">#FFE00404</Str>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3">4500</Str>
+			<Int sr="arg9" val="1"/>
+		</Action>
+	</Task>
+	<Task sr="task6">
+		<cdate>1723875527763</cdate>
+		<edate>1723875527763</edate>
+		<id>6</id>
+		<pri>102</pri>
+		<Action sr="act0" ve="7">
+			<code>49</code>
+			<label>destroy scene</label>
+			<Str sr="arg0" ve="3">pop</Str>
+		</Action>
+	</Task>
+	<Task sr="task7">
+		<cdate>1706788836777</cdate>
+		<edate>1724378144518</edate>
+		<id>7</id>
+		<nme>telegram</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>547</code>
+			<label>please set message</label>
+			<se>false</se>
+			<Str sr="arg0" ve="3">%msg</Str>
+			<Str sr="arg1" ve="3">http://apple.com</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>547</code>
+			<label>base</label>
+			<Str sr="arg0" ve="3">%base</Str>
+			<Str sr="arg1" ve="3">https://api.telegram.org/bot5081840937:AAGS3bp-Fci1gwAKgTWafNkVPi0731VQZg0/sendMessage?chat_id=6324343731&amp;parse_mode=HTML&amp;text=</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>547</code>
+			<label>whole</label>
+			<se>false</se>
+			<Str sr="arg0" ve="3">%whole</Str>
+			<Str sr="arg1" ve="3">%base%msg</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>339</code>
+			<label>send</label>
+			<se>false</se>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%http_cookies
+Cookies
+The cookies the server sent in the response in the Cookie:COOKIE_VALUE format. You can use this directly in the 'Headers' field of the HTTP Request action&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%http_data
+Data
+Data that the server responded from the HTTP request.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%http_file_output
+File Output
+Will always contain the file's full path even if you specified a directory as the File to save.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%http_response_code
+Response Code
+The HTTP Code the server responded&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;%http_headers()
+Response Headers
+The HTTP Headers the server sent in the response. Each header is in the 'key:value' format&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;%http_response_length
+Response Length
+The size of the response in bytes&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg10" val="0"/>
+			<Int sr="arg11" val="0"/>
+			<Int sr="arg12" val="1"/>
+			<Str sr="arg2" ve="3">%whole</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="30"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>37</code>
+			<coll>true</coll>
+			<label>if success</label>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%http_response_code</lhs>
+					<op>0</op>
+					<rhs>200</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>548</code>
+			<label>success</label>
+			<Str sr="arg0" ve="3">success</Str>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg10" ve="3"/>
+			<Int sr="arg11" val="1"/>
+			<Int sr="arg12" val="0"/>
+			<Str sr="arg13" ve="3"/>
+			<Int sr="arg14" val="0"/>
+			<Str sr="arg15" ve="3"/>
+			<Int sr="arg2" val="0"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Int sr="arg9" val="1"/>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>38</code>
+		</Action>
+		<Img sr="icn" ve="2">
+			<cls>org.telegram.messenger.DefaultIcon</cls>
+			<pkg>org.telegram.messenger</pkg>
+		</Img>
+	</Task>
+	<Task sr="task86">
+		<cdate>1698288530365</cdate>
+		<edate>1723887043365</edate>
+		<id>86</id>
+		<pri>6</pri>
+		<Action sr="act0" ve="7">
+			<code>37</code>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%CNUM</lhs>
+					<op>0</op>
+					<rhs>3*</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>171</code>
+			<Int sr="arg0">
+				<var>10000</var>
+			</Int>
+			<Int sr="arg1">
+				<var>500</var>
+			</Int>
+			<Int sr="arg2" val="25"/>
+			<Int sr="arg3" val="5"/>
+			<Str sr="arg4" ve="3"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>43</code>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>171</code>
+			<Int sr="arg0">
+				<var>10000</var>
+			</Int>
+			<Int sr="arg1">
+				<var>500</var>
+			</Int>
+			<Int sr="arg2" val="25"/>
+			<Int sr="arg3" val="5"/>
+			<Str sr="arg4" ve="3"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>30</code>
+			<Int sr="arg0">
+				<var>30</var>
+			</Int>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>171</code>
+			<Int sr="arg0">
+				<var>10000</var>
+			</Int>
+			<Int sr="arg1">
+				<var>1000</var>
+			</Int>
+			<Int sr="arg2" val="25"/>
+			<Int sr="arg3" val="5"/>
+			<Str sr="arg4" ve="3"/>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>30</code>
+			<on>false</on>
+			<Int sr="arg0">
+				<var>30</var>
+			</Int>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act7" ve="7">
+			<code>171</code>
+			<on>false</on>
+			<Int sr="arg0">
+				<var>10000</var>
+			</Int>
+			<Int sr="arg1">
+				<var>200</var>
+			</Int>
+			<Int sr="arg2" val="25"/>
+			<Int sr="arg3" val="4"/>
+			<Str sr="arg4" ve="3"/>
+		</Action>
+		<Action sr="act8" ve="7">
+			<code>38</code>
+		</Action>
+	</Task>
+	<Task sr="task9">
+		<cdate>1723900904259</cdate>
+		<edate>1724380781526</edate>
+		<id>9</id>
+		<nme>store gps</nme>
+		<pri>100</pri>
+		<Kid sr="Kid">
+			<launchID>5</launchID>
+			<pkg>a.apk</pkg>
+			<vTarg>29</vTarg>
+			<vnme>1.0</vnme>
+			<vnum>2</vnum>
+		</Kid>
+		<Action sr="act0" ve="7">
+			<code>366</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%gl_latitude
+1. Latitude
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%gl_longitude
+2. Longitude
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%gl_coordinates_accuracy
+3. Lat, Lon Accuracy
+In meters&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%gl_altitude
+Altitude (meters)
+In meters&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;%gl_altitude_accuracy
+Altitude Accuracy
+In meters&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;%gl_bearing
+Bearing
+in the range 0.0–360.0; Horizontal direction of travel of this device; not related to the device orientation&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES6&gt;%gl_bearing_accuracy
+Bearing Accuracy
+In degrees&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES6&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES7&gt;%gl_map_url
+Google Maps URL
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES7&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES8&gt;%gl_coordinates
+Latitude and Longitude
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES8&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES9&gt;%gl_satellites
+Satellites
+The number of satellites used to derive the fix. May not always be available.&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES9&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES10&gt;%gl_speed
+Speed
+In meters per second&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES10&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES11&gt;%gl_speed_accuracy
+Speed
+In meters per second&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES11&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES12&gt;%gl_time_seconds
+Time
+Time in seconds since EPOCH the location was gotten&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES12&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES13&gt;%gl_time_adjusted_milliseconds
+Time Adjusted Milliseconds
+Result of adding the current system time with the offset between the system time and the location time&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES13&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES14&gt;%gl_time_gnss_milliseconds
+Time GNSS Milliseconds
+Time in milliseconds since EPOCH the location was gotten synchrined to the device's location provider&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES14&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES15&gt;%gl_time_milliseconds
+Time Milliseconds
+Time in milliseconds since EPOCH the location was gotten&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES15&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES16&gt;%gl_time_offset_milliseconds
+Time Offset Milliseconds
+Time difference in milliseconds between the system time and the location time&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES16&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES17&gt;%gl_time_taken_millis
+Time Taken
+Time in milliseconds that it took for Tasker to get the location&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES17&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Int sr="arg1" val="30"/>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+			<Str sr="arg8" ve="3"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>129</code>
+			<Str sr="arg0" ve="3">var lat = {};
+lat.lat = gl_latitude;
+lat.lon = gl_longitude;
+lat.acc = gl_coordinates_accuracy;
+lat.alt = gl_altitude;
+lat.time = gl_time_seconds;
+
+var string = JSON.stringify(lat);
+var title = "current object";
+var message = string;</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3" val="45"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>47</code>
+			<label>show this object</label>
+			<Str sr="arg0" ve="3">pop</Str>
+			<Int sr="arg1" val="3"/>
+			<Int sr="arg10" val="1"/>
+			<Int sr="arg2" val="100"/>
+			<Int sr="arg3" val="100"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="1"/>
+			<Int sr="arg7" val="0"/>
+			<Int sr="arg8" val="1"/>
+			<Int sr="arg9" val="1"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>326</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%gd_local_paths()
+Local Paths
+List of local paths for the downloaded files&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">rpi.esp32@gmail.com</Str>
+			<Int sr="arg2" val="1"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3">/LINKS/Android/tasker/data</Str>
+			<Str sr="arg5" ve="3">gps.json</Str>
+			<Str sr="arg6" ve="3">Tasker/data</Str>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>417</code>
+			<Str sr="arg0" ve="3">Tasker/data/gps.json</Str>
+			<Str sr="arg1" ve="3">%past</Str>
+			<Int sr="arg2" val="1"/>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>129</code>
+			<Str sr="arg0" ve="3">var pastarray = JSON.parse(past);
+var obj = JSON.parse(string);
+pastarray.push(obj);
+
+var complete = JSON.stringify(pastarray);
+
+title = "every object";
+message = complete;</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3" val="45"/>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>47</code>
+			<label>show all objects</label>
+			<on>false</on>
+			<Str sr="arg0" ve="3">pop</Str>
+			<Int sr="arg1" val="3"/>
+			<Int sr="arg10" val="1"/>
+			<Int sr="arg2" val="100"/>
+			<Int sr="arg3" val="100"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="1"/>
+			<Int sr="arg7" val="0"/>
+			<Int sr="arg8" val="1"/>
+			<Int sr="arg9" val="1"/>
+		</Action>
+		<Action sr="act7" ve="7">
+			<code>410</code>
+			<Str sr="arg0" ve="3">Tasker/data/gps.json</Str>
+			<Str sr="arg1" ve="3">%complete</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act8" ve="7">
+			<code>321</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%gd_id
+File ID
+Unique ID for the file on Google Drive&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%gd_name
+File Name
+Name of the file on Google Drive&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%gd_size
+File Size
+Size of the file (in bytes) on Google Drive&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%gd_time
+File Time
+The last time the file was modified by anyone. Expressed in Seconds since Epoch (similar to %TIMES)&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;%gd_md5
+MD5
+MD5 checksum of the file on Google Drive&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES4&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;%gd_mimetype
+Mime Type
+Type of the file on Google Drive&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES5&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES6&gt;%gd_uploaded
+Uploaded
+true if file was uploaded, false otherwise&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES6&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES7&gt;%gd_weburl
+Web URL
+URL that can be used to show the file on your Google Drive&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES7&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">rpi.esp32@gmail.com</Str>
+			<Str sr="arg2" ve="3">Tasker/data/gps.json</Str>
+			<Str sr="arg3" ve="3">gps.json</Str>
+			<Str sr="arg4" ve="3">/LINKS/Android/tasker/data</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="1"/>
+			<Int sr="arg7" val="0"/>
+			<Str sr="arg8" ve="3"/>
+		</Action>
+		<Action sr="act9" ve="7">
+			<code>548</code>
+			<Str sr="arg0" ve="3">task completed</Str>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg10" ve="3"/>
+			<Int sr="arg11" val="1"/>
+			<Int sr="arg12" val="0"/>
+			<Str sr="arg13" ve="3"/>
+			<Int sr="arg14" val="0"/>
+			<Str sr="arg15" ve="3"/>
+			<Int sr="arg2" val="0"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Int sr="arg9" val="1"/>
+		</Action>
+		<Img sr="icn" ve="2">
+			<nme>cust_star</nme>
+		</Img>
+	</Task>
+	<Task sr="task98">
+		<cdate>1700181633467</cdate>
+		<edate>1723887088064</edate>
+		<id>98</id>
+		<nme>up&amp;down (25/100)</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>171</code>
+			<Int sr="arg0" val="5000"/>
+			<Int sr="arg1" val="500"/>
+			<Int sr="arg2" val="25"/>
+			<Int sr="arg3" val="5"/>
+			<Str sr="arg4" ve="3"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>171</code>
+			<Int sr="arg0" val="7000"/>
+			<Int sr="arg1" val="500"/>
+			<Int sr="arg2" val="25"/>
+			<Int sr="arg3" val="5"/>
+			<Str sr="arg4" ve="3"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>171</code>
+			<Int sr="arg0" val="9000"/>
+			<Int sr="arg1" val="500"/>
+			<Int sr="arg2" val="25"/>
+			<Int sr="arg3" val="5"/>
+			<Str sr="arg4" ve="3"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>171</code>
+			<Int sr="arg0" val="9000"/>
+			<Int sr="arg1" val="500"/>
+			<Int sr="arg2" val="25"/>
+			<Int sr="arg3" val="5"/>
+			<Str sr="arg4" ve="3"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>171</code>
+			<Int sr="arg0" val="7000"/>
+			<Int sr="arg1" val="500"/>
+			<Int sr="arg2" val="25"/>
+			<Int sr="arg3" val="5"/>
+			<Str sr="arg4" ve="3"/>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>171</code>
+			<Int sr="arg0" val="5000"/>
+			<Int sr="arg1" val="500"/>
+			<Int sr="arg2" val="25"/>
+			<Int sr="arg3" val="5"/>
+			<Str sr="arg4" ve="3"/>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>171</code>
+			<Int sr="arg0" val="5000"/>
+			<Int sr="arg1" val="500"/>
+			<Int sr="arg2" val="25"/>
+			<Int sr="arg3" val="5"/>
+			<Str sr="arg4" ve="3"/>
+		</Action>
+		<Action sr="act7" ve="7">
+			<code>171</code>
+			<Int sr="arg0" val="7000"/>
+			<Int sr="arg1" val="500"/>
+			<Int sr="arg2" val="25"/>
+			<Int sr="arg3" val="5"/>
+			<Str sr="arg4" ve="3"/>
+		</Action>
+		<Action sr="act8" ve="7">
+			<code>171</code>
+			<Int sr="arg0" val="9000"/>
+			<Int sr="arg1" val="500"/>
+			<Int sr="arg2" val="25"/>
+			<Int sr="arg3" val="5"/>
+			<Str sr="arg4" ve="3"/>
+		</Action>
+	</Task>
+</TaskerData>
