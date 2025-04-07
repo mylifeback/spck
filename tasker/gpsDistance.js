@@ -16,3 +16,7 @@ function distanceInKmBetweenEarthCoordinates(lat1, lon1, lat2, lon2) {
     var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a)); 
     return earthRadiusKm * c;
 }
+
+function radiusAtLatitude (){
+  https://www.quora.com/How-do-you-calculate-the-Earth-s-radius-at-a-given-lat-long
+}
