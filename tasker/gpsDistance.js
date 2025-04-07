@@ -37,4 +37,19 @@ var lon2 = json2.lon
 
 var distance = 1093.613 × distanceInKmBetweenEarthCoordinates(lat1, lon1, lat2, lon2)
 
+var deltatime = json2.time - json1.time
+
+var clubcurrent = club
+var holecurrent = hole
+var coursecurrent = course
+var strokecurrent = stroke + 1
+stroke = strokecurrent
+
+
+
 // get result = distance in yards
+// get time elapsd = deltatime in seconds
+// get club = clubcurrent
+// get stroke = strokecurrent
+// get hole = holecurrent
+// get course = coursecurrent
