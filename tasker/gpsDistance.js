@@ -20,9 +20,9 @@ function distanceInKmBetweenEarthCoordinates(lat1, lon1, lat2, lon2) {
 
 function radiusAtLatitude (lat){
   var radian = degreesToRadians(lat)
-  var nominator = 6378.1×6356.8
-  var denominator = ((MATH.cos(radian)×6378.1)^2 + (MATH.sin(radian)×6356.8)^2) ^ 0.5
-  var radius = nominator ÷ denominator
+  var nominator = 6378.1*6356.8
+  var denominator = ((MATH.cos(radian)*6378.1)^2 + (MATH.sin(radian)*6356.8)^2) ^ 0.5
+  var radius = nominator / denominator
   return radius
   // https://www.quora.com/How-do-you-calculate-the-Earth-s-radius-at-a-given-lat-long
 }
@@ -35,7 +35,7 @@ var lon2 = json2.lon
 
 
 
-var distance = 1093.613 × distanceInKmBetweenEarthCoordinates(lat1, lon1, lat2, lon2)
+var distance = 1093.613 * distanceInKmBetweenEarthCoordinates(lat1, lon1, lat2, lon2)
 
 var deltatime = json2.time - json1.time
 
