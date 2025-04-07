@@ -3,7 +3,8 @@ function degreesToRadians(degrees) {
 }
 
 function distanceInKmBetweenEarthCoordinates(lat1, lon1, lat2, lon2) {
-    var earthRadiusKm = 6371;
+    //var earthRadiusKm = 6371;
+    var earthRadiusKm = radiusAtLatitude(lat1)
     
     var dLat = degreesToRadians(lat2-lat1);
     var dLon = degreesToRadians(lon2-lon1);
@@ -17,6 +18,23 @@ function distanceInKmBetweenEarthCoordinates(lat1, lon1, lat2, lon2) {
     return earthRadiusKm * c;
 }
 
-function radiusAtLatitude (){
-  https://www.quora.com/How-do-you-calculate-the-Earth-s-radius-at-a-given-lat-long
+function radiusAtLatitude (lat){
+  var radian = degreesToRadians(lat)
+  var nominator = 6378.1×6356.8
+  var denominator = ((MATH.cos(radian)×6378.1)^2 + (MATH.sin(radian)×6356.8)^2) ^ 0.5
+  var radius = nominator ÷ denominator
+  return radius
+  // https://www.quora.com/How-do-you-calculate-the-Earth-s-radius-at-a-given-lat-long
 }
+
+
+var lat1 = json1.lat
+var lon1 = json1.lon
+var lat2 = json2.lat
+var lon2 = json2.lon
+
+
+
+var distance = 1093.613 × distanceInKmBetweenEarthCoordinates(lat1, lon1, lat2, lon2)
+
+// get result = distance in yards
