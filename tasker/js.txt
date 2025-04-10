@@ -1,0 +1,2 @@
+vibrate(1000);
+flash("hello world");
