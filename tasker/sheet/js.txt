@@ -7,7 +7,7 @@ setGlobal("Asid", Global("ASid"));
 setGlobal("Asname", "GOLF");
 setGlobal("Ascolumn", "A");
 setGlobal("Asrow", "1");
-setGlobal("Asdata", jointext);
+//setGlobal("Asdata", jointext);
 performTask("getData");
 
 
