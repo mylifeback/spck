@@ -1,2 +1,14 @@
-vibrate(1000);
-flash("hello world");
+//vibrate(1000);
+//flash("hello world");
+
+
+
+setGlobal("Asid", Global("ASid"));
+setGlobal("Asname", "GOLF");
+setGlobal("Ascolumn", "A");
+setGlobal("Asrow", "1");
+setGlobal("Asdata", jointext);
+performTask("getData");
+
+While (taskRunning("getData")) {}
+flash(Global(Asdata));
