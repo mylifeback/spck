@@ -1,5 +1,5 @@
 //vibrate(1000);
-//flash("hello world");
+flash("hello world");
 
 
 
