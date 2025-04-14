@@ -10,5 +10,7 @@ setGlobal("Asrow", "1");
 setGlobal("Asdata", jointext);
 performTask("getData");
 
+
+flash (taskRunning("getData"));
 While (taskRunning("getData")) {}
 flash(Global(Asdata));
