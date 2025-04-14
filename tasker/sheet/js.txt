@@ -12,7 +12,7 @@ performTask("getData");
 
 
 flash (taskRunning("getData"));
-While (taskRunning("getData")) {
+while (taskRunning("getData")) {
   let a = 1;
 }
 flash(Global(Asdata));
