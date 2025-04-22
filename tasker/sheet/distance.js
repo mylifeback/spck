@@ -1,5 +1,5 @@
-//const json1 = '{"time":"8 Apr 2025 at 1:32 PM","lat":"22.28313310358927","alt":"79.1931915283203","lon":"114.1561049651511","input":"CClinic"}';
-//const json2 = '{"time":"8 Apr 2025 at 1:32 PM","lat":"23.28313310358927","alt":"79.1931915283203","lon":"114.1561049651511","input":"CClinic"}';
+//const json1 = '{"time":"8 Apr 2025 at 1:32 PM","lat":"23.28313310358927","alt":"79.1931915283203","lon":"115.1561049651511","input":"CClinic"}';
+//const json2 = '{"time":"8 Apr 2025 at 1:32 PM","lat":"23.28313310358927","alt":"79.1931915283203","lon":"115.1561049651511","input":"CClinic"}';
 
 const json1 = global("OldGPS");
 const json2 = global("NewGPS");
