@@ -24,14 +24,14 @@
   			display.textContent = "starting now from main";
   
         function send (){
-        	display.textContent = counter;
+        	display.textContent = "main : " + counter;
         	counter ++;
         	worker.postMessage(counter);
         }
         
         function received (data){
         	counter = data.data[0] + 1;
-        	display.textContent = counter;
+        	display.textContent = "worker : " + counter;
         }
         
         setInterval (send, 2000);
