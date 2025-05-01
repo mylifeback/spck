@@ -1,4 +1,4 @@
-
+// work with worker.html
 
 
 function handle (data){
