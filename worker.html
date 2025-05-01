@@ -14,7 +14,24 @@
 		<script type="module">
         
         const worker = new Worker ("./worker.js");
-        console.log("started main");
+   
+        let counter = 0;
+        const display = document.getElementById("display");
+  			display.textContent = "starting now from main";
+  
+        function send (){
+        	display.textContent = counter;
+        	counter ++;
+        	worker.postMessage(counter);
+        }
+        
+        function received (data){
+        	counter = data.data[0] + 1;
+        	display.textContent = counter;
+        }
+        
+        setInterval (send, 2000);
+        onmessage = received;
 
 		</script>
 	</body>

@@ -1,8 +1,9 @@
-console.log("started worker");
 
 
-function loop (){
-  console.log("worker thread: " + 45678);
+
+function handle (data){
+  setTimeout (postMessage(data.data[0] +1), 1000);
 }
 
-setInterval (loop, 1000);
+onmessage = handle(data);
+
