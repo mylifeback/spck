@@ -31,8 +31,15 @@ function gotFaces(results) {
   console.log("got " + {results});
 }
 
+function got1Face(results) {
+  console.log("hello");
+  console.log("got 1 face" + { results });
+}
+
 function setup() {
-  faceMesh.detectStart(video, gotFaces);
+  // faceMesh.detectStart(video, gotFaces);
+  faceMesh.detect(video, got1Face);
+
 }
 
 function camera() {
