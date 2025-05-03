@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,
+                   initial-scale=1.0">
+    <title>Our image-classification tool</title>
+
+    <!-- Include the p5.js library -->
+    <script src=
+"https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.min.js"></script>
+
+
+    <!-- Include the ml5.js library -->
+    <script src=
+"https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+    <style>
+        /* Set styles for HTML elements */
+        h1,
+        h2 {
+            font-family: sans-serif;
+            text-align: center;
+        }
+
+        .imageInput {
+            width: 100%;
+            text-align: center;
+        }
+
+        .imageResult {
+            font-family: arial;
+            width: 100%;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .uploadedImage {
+            width: 50%;
+            height: auto;
+            margin-left: 25%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Image Classifier</h1>
+
+    <h2>Click "Choose File" to Add an Image</h2>
+
+    <!-- Container for image classification result -->
+    <div class="imageResult" id="imageResult"></div>
+
+    <div class="imageInput">
+        <input type="file" 
+               oninput="
+uploadedImage.src=window.URL.createObjectURL(this.files[0]); startImageScan()">
+    </div>
+
+    <!-- Container for the uploaded image -->
+    <img class="uploadedImage" id="uploadedImage" />
+
+    <script>
+        // Create a variable containing the result container
+        const element = document.getElementById("imageResult");
+
+        function startImageScan() {
+            // Create a variable to initialize the 
+          // ml5.js image classifier with MobileNet
+            const classifier = ml5.imageClassifier('MobileNet');
+
+            // Scan the uploaded image
+            classifier.classify(document.getElementById("uploadedImage"), imageScanResult);
+            element.innerHTML = "...";
+        }
+
+        // Check for errors and display the results if there aren't any
+        function imageScanResult(error, results) {
+            if (error) {
+                element.innerHTML = error;
+            } else {
+                let num = results[0].confidence * 100;
+                element.innerHTML = results[0].label + 
+                  "Confidence: " + num.toFixed(0) + "%";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
