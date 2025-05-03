@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" class="loading">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Classifier</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .hidden {
+      display: none;
+    }
+    .loading .display-loading {
+      display: block;
+    }
+    .running .display-running {
+      display: block;
+    }
+    #results {
+      background-color: white;
+      width: 20rem;
+      min-height: 6rem;
+      display: none;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      font-size: 2rem;
+    }
+    .running #results {
+      display: flex;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="h1">Image Classifier</h1>
+  <h2 id="state"></h2>
+  <canvas id="canvas" class="fancy-shadow hidden display-running"></canvas>
+  <div id="results" class="fancy-shadow hidden display-running"></div>
+  <script src="https://unpkg.com/ml5@1/dist/ml5.js"></script>
+  <script>
+
+    const $canvas = document.querySelector('#canvas');
+    const $results = document.querySelector('#results');
+    const $state = document.querySelector('#state');
+
+    let video, ctx;
+    let classifier;
+    let classificationResults = [];
+
+    const STATE_LOADING = "loading";
+    const STATE_RUNNING = "running";
+    const ALL_STATES = [STATE_LOADING, STATE_RUNNING];
+    let state = STATE_LOADING;
+
+    const setState = (value) => {
+      console.log('setState', value);
+      state = value;
+      $state.textContent = state;
+      document.documentElement.classList.remove(...ALL_STATES);
+      document.documentElement.classList.add(state);
+    };
+
+    const preload = async () => {
+      setState(STATE_LOADING);
+      requestAnimationFrame(draw);
+      classifier = ml5.imageClassifier("MobileNet");
+      await classifier.ready;
+      console.log('model ready');
+      setup();
+    }
+
+    const setup = async () => {
+      console.log('setup');
+      ctx = $canvas.getContext('2d');
+      // create a video stream - specify a fixed size
+      const stream = await navigator.mediaDevices.getUserMedia({ video: {
+        width: 640,
+        height: 480
+      } });
+      video = document.createElement('video');
+      video.srcObject = stream;
+      video.play();
+      // set canvas & video size
+      $canvas.width = video.width = 640;
+      $canvas.height = video.height = 480;
+      // start detecting poses - use the canvas instead of the video (BlazePose compatibility)
+      // classifier.classify(video, gotResults);
+      classifier.classifyStart(video, (results) => {
+        // store in a global
+        classificationResults = results;
+      });
+      // start the app
+      setState(STATE_RUNNING);
+    }
+
+    const draw = () => {
+      if (state === STATE_RUNNING) {
+        ctx.drawImage(video, 0, 0, $canvas.width, $canvas.height);
+        $results.innerHTML = classificationResults
+          .map(result => `${result.label} (${result.confidence.toFixed(2)})`)
+          .join('<br>');
+      }
+      requestAnimationFrame(draw);
+    }
+
+    preload();
+  </script>
+</body>
+</html>
