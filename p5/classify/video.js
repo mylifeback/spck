@@ -29,7 +29,7 @@ function modelReady() {
 
 // Get a prediction for the current video frame
 function classifyVideo() {
-  classifier.classify(gotResult);
+  classifier.classifyStart(gotResult);
 }
 
 // When we get a result
