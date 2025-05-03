@@ -8,6 +8,7 @@ const classifier = ml5.imageClassifier(CLASSIFIER);
 
 document.addEventListener("DOMContentLoaded", onImageReady);
 image.onload = onImageReady;
+onImageReady();
 
 // console.log(image);
 // console.log(result);
