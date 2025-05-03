@@ -2,7 +2,7 @@ let CLASSIFIER = "MobileNet";
 const image = document.getElementById("image");
 const result = document.getElementById("result");
 const probability = document.getElementById("probability");
-const outputElement = document.getElementById("output");
+const outputElement = document.getElementById("paragraph");
 
 const classifier = ml5.imageClassifier(CLASSIFIER);
 
