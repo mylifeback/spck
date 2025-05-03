@@ -20,6 +20,6 @@ function onImageLoaded(){
 function gotResult(results){
   console.log("got result ...");
   console.log({results});
-  // result.innerText = results[0].label;
-  // probability.innerText = results[0].probability.toPrecision(2);
+  result.innerText = results[0].label;
+  probability.innerText = results[0].probability.toPrecision(2);
 }
