@@ -1,6 +1,7 @@
 
 const canvas = document.getElementById("canvas");
 const video = document.getElementById("video");
+let v;
 
 let faceMesh;
 let faces = [];
@@ -17,14 +18,24 @@ const constraints = {
 function setup() {
   console.log("setup started");
   preload();
-  takeVideo();
+  // takeVideo();
   setInterval(console.log({ faces }), 3000);
-  faceMesh.detectStart(video, gotFaces);
+  v();
+  // faceMesh.detectStart(video, gotFaces);
   console.log("detect started");
 }
 
 function draw() {
-  console.log("a");
+  // console.log("a");
+}
+
+function v() {
+  // createCanvas(640, 480);
+  v = createCapture(VIDEO);
+  v.size(640, 480);
+  v.hide();
+
+  faceMesh.detectStart(v, gotFaces);
 }
 
 function preload() {
