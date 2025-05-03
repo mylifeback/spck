@@ -8,11 +8,11 @@ const classifier = ml5.imageClassifier(CLASSIFIER);
 
 window.addEventListener("load", onImageReady);
 
-console.log(image);
-console.log(result);
-console.log(probability);
-console.log(outputElement);
-onImageReady();
+// console.log(image);
+// console.log(result);
+// console.log(probability);
+// console.log(outputElement);
+// onImageReady();
 
 function onImageReady(){
   console.log("loaded");
