@@ -7,6 +7,10 @@ const outputElement = document.getElementById("paragraph");
 const classifier = ml5.imageClassifier(CLASSIFIER);
 
 
+console.log(image);
+console.log(result);
+console.log(probability);
+console.log(outputElement);
 
 // function onImageReady() {
 //   console.log("ready");
