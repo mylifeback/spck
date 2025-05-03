@@ -15,7 +15,7 @@ const constraints = {
   video: {
     facingMode: "user",
     width: { min: 320, ideal: 640, max: 800 },
-    height: {min: 200, ideal: 480, max: 800}
+    height: {min: 240, ideal: 480, max: 720}
   }
 }
 const source = "https://";
