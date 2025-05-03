@@ -7,7 +7,7 @@
 		<title>three.js xr - dragging</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-		<link type="text/css" rel="stylesheet" href="./src/main.css">
+		<link type="text/css" rel="stylesheet" href="./supp/worker.css">
 		<link rel="icon" type="image/x-icon" href="./src/favicon.ico"/>
 	</head>
 	<body>
@@ -17,7 +17,7 @@
 
 		<script type="module">
         
-        const worker = new Worker ("./worker.js");
+        const worker = new Worker ("./supp/worker.js");
    
         let counter = 0;
         const display = document.getElementById("display");
