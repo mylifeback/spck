@@ -6,15 +6,6 @@
       name="viewport"
       content="width=device-width, user-scalable=yes, minimum-scale=1.0, maximum-scale=5.0"
     />
-    <link type="text/css" rel="stylesheet" href="./src/main.css" />
-    <link rel="icon" type="image/x-icon" href="./src/favicon.ico" />
-    <!-- Meta Tags required for
-        Progressive Web App -->
-    <meta name="apple-mobile-web-app-status-bar" content="#aa7700" />
-    <meta name="theme-color" content="black" />
-    <!-- Manifest File link -->
-    <!-- <link rel="manifest" href="./manifest.json" /> -->
-    <!-- error with permission policy header: origin trial controlled feature not enabled: 'interest-cohort' -->
     <meta
       http-equiv="Permissions-Policy"
       content="interest-cohort=(), user-id=()"
@@ -25,36 +16,18 @@
   </head>
 
   <body>
-
-
-<!--
-    This is the image we want to use.
-    We can change the src later in code.
-    We set crossOrigin to anonymous because imgur
-    will respect that and send CORS headers.
-    Not needed if you're loading an image from your own domain.
-
-example images:
+    <!--
 src="https://i.imgur.com/wxrLX68.jpg" (orig)
 src="https://www.ferrariofnewportbeach.com/assets/inventory/vehicles/zff74ufa8e0198250/ip/1.jpg"
 src="https://swh-826d.kxcdn.com/wp-content/uploads/2011/08/Medieval-Gothic-Cathedrals-2.jpg" 
-
     -->
-
     <h1>Image Classification ML5</h1>
     <img onload="onImageReady()" id="image" src="https://i.imgur.com/wxrLX68.jpg" crossOrigin="anonymous">
-    
-    <p>
-      I guess this is a <span id="result">...</span>. My confidence is <span id="probability">...</span>
-    </p>
+    <p>I guess this is a <span id="result">...</span>. My confidence is <span id="probability">...</span></p>
     <div id="paragraph"> waiting ... </div>
 
 
-    <!-- <script src="https://unpkg.com/ml5@1/dist/ml5.min.js"></script> -->
     <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
-    <!-- <script src="https://unpkg.com/ml5@0.3.0/dist/ml5.min.js"></script> -->
     <script src="./supp/ml5.js"></script>
-
-
   </body>
   </html>
