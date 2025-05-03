@@ -18,7 +18,7 @@ const source = "https://";
 
 preload();
 camera();
-// setup();
+setup();
 // window.addEventListener("load", setup);
 
 function preload() {
