@@ -1,9 +1,3 @@
-// let CLASSIFIER = "MobileNet";
-// const image = document.getElementById("image");
-// const result = document.getElementById("result");
-// const probability = document.getElementById("probability");
-// const outputElement = document.getElementById("paragraph");
-// const classifier = ml5.imageClassifier(CLASSIFIER);
 
 const canvas = document.getElementById("canvas");
 const video = document.getElementById("video");
@@ -24,10 +18,13 @@ const source = "https://";
 
 
 preload();
-setup();
+camera();
+// setup();
+// window.addEventListener("load", setup);
 
 function preload() {
   faceMesh = ml5.faceMesh(options);
+  console.log("preloading ");
 }
 
 function gotFaces(results) {
@@ -39,12 +36,10 @@ function setup() {
   faceMesh.detectStart(video, gotFaces);
 }
 
-window.addEventListener("load", setup);
-
 function camera() {
   navigator.mediaDevices.getUserMedia(constraints).then(function (streamObj) {
     video.srcObject = streamObj;
-    video.onloadedmetadata = function (event) { video.onplay(); }
+    video.onloadedmetadata = function (event) { video.onplay() };
   })
 }
 
