@@ -26,7 +26,8 @@ function preload() {
 }
 
 function gotFaces(results) {
-  faces = results;
+  console.log (called back);
+  // faces = results;
   // console.log("got " + {results});
 }
 
