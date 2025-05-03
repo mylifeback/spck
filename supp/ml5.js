@@ -6,7 +6,8 @@ const outputElement = document.getElementById("paragraph");
 
 const classifier = ml5.imageClassifier(CLASSIFIER);
 
-document.addEventListener("DOMContentLoaded", onImageReady);
+// document.addEventListener("DOMContentLoaded", onImageReady);
+image.onload = onImageReady;
 
 // console.log(image);
 // console.log(result);
