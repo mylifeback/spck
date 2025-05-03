@@ -24,5 +24,5 @@ function gotResult(results){
   console.log({ results });
   outputElement.textContent = "results arrived ...";
   result.innerText = results[0].label;
-  probability.innerText = results[0].probability.toPrecision(2);
+  probability.innerText = results[0].confidence.toPrecision(2);
 }
