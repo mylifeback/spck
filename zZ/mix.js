@@ -1,7 +1,7 @@
 
 const canvas = document.getElementById("canvas");
 const video = document.getElementById("video");
-let v;
+let vid;
 
 let faceMesh;
 let faces = [];
@@ -32,11 +32,11 @@ function draw() {
 
 function v() {
   // createCanvas(640, 480);
-  v = createCapture(VIDEO);
-  v.size(640, 480);
+  vid = createCapture(VIDEO);
+  vid.size(640, 480);
   // v.hide();
 
-  faceMesh.detectStart(v, gotFaces);
+  faceMesh.detectStart(vid, gotFaces);
 }
 
 function preload() {
