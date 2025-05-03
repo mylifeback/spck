@@ -10,7 +10,16 @@ const video = document.getElementById("video");
 let faceMesh;
 let faces = [];
 let options = { maxFaces: 1, refineLandmarks: false, flipped: false };
+const constraints = {
+  audio: false,
+  video: {
+    facingMode: "user",
+    width: { min: 320, ideal: 640, max: 800 },
+    height: {min: 200, ideal: 480, max: 800}
+  }
+}
 const source = "https://";
+
 
 
 
