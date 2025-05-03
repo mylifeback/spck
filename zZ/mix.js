@@ -1,7 +1,7 @@
 
 const canvas = document.getElementById("canvas");
 const video = document.getElementById("video");
-let stream;
+
 let faceMesh;
 let faces = [];
 let options = { maxFaces: 1, refineLandmarks: false, flipped: false };
