@@ -16,6 +16,7 @@ function onImageReady(){
   console.log("loaded");
   classifier.classify(image, 10, gotResult);
   console.log("predicted");
+  console.log(outputElement);
   outputElement.textContent = "predicting ...";
 }
 
