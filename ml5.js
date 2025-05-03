@@ -2,7 +2,7 @@ let CLASSIFIER = "MobileNet";
 const image = document.getElementById("image");
 const result = document.getElementById("result");
 const probability = document.getElementById("probability");
-const log = document.getElementById("console");
+const output = document.getElementById("output");
 
 const classifier = ml5.imageClassifier(CLASSIFIER);
 
@@ -22,7 +22,7 @@ function onImageReady(){
 function gotResult(results){
   console.log("got result ...");
   console.log({ results });
-  log.textContent = "results arrived ...";
+  output.textContent = "results arrived ...";
   result.innerText = results[0].label;
   probability.innerText = results[0].probability.toPrecision(2);
 }
