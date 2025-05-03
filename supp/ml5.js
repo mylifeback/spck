@@ -12,7 +12,7 @@ console.log(image);
 console.log(result);
 console.log(probability);
 console.log(outputElement);
-
+onImageReady();
 
 function onImageReady(){
   console.log("loaded");
