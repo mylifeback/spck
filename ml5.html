@@ -1,9 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=yes, minimum-scale=1.0, maximum-scale=5.0"
+    />
+    <link type="text/css" rel="stylesheet" href="./src/main.css" />
+    <link rel="icon" type="image/x-icon" href="./src/favicon.ico" />
+    <!-- Meta Tags required for
+        Progressive Web App -->
+    <meta name="apple-mobile-web-app-status-bar" content="#aa7700" />
+    <meta name="theme-color" content="black" />
+    <!-- Manifest File link -->
+    <!-- <link rel="manifest" href="./manifest.json" /> -->
+    <!-- error with permission policy header: origin trial controlled feature not enabled: 'interest-cohort' -->
+    <meta
+      http-equiv="Permissions-Policy"
+      content="interest-cohort=(), user-id=()"
+    />
+    <title id="title">ML5</title>
+    <link type="text/css" rel="stylesheet" href="ml5.css">
+    <link rel="icon" type="image/x-icon" href="ml5.ico"/>
+  </head>
+
+  <body>
 <!-- <script src="https://unpkg.com/ml5@1/dist/ml5.min.js"></script> -->
 <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
 <!-- <script src="https://unpkg.com/ml5@0.3.0/dist/ml5.min.js"></script> -->
 <script src="ml5.js"></script>
-<link type="text/css" rel="stylesheet" href="ml5.css">
-<link rel="icon" type="image/x-icon" href="ml5.ico"/>
+
 
 <!--
     This is the image we want to use.
@@ -26,3 +52,6 @@ src="https://swh-826d.kxcdn.com/wp-content/uploads/2011/08/Medieval-Gothic-Cathe
       I guess this is a <span id="result">...</span>. My confidence is <span id="probability">...</span>
     </p>
     <div id="paragraph"> waiting ... </div>
+
+  </body>
+  </html>
