@@ -38,7 +38,7 @@ function setup() {
 function camera() {
   navigator.mediaDevices.getUserMedia(constraints).then(function (streamObj) {
     video.srcObject = streamObj;
-    video.onloadedmetadata = function (event) { video.onplay() };
+    video.onloadedmetadata = function (event) { video.play() };
   })
 }
 
