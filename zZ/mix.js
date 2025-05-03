@@ -17,7 +17,7 @@ const constraints = {
 function setup() {
   console.log("setup started");
   preload();
-  camera();
+  pic();
   setInterval(console.log({ faces }), 3000);
   faceMesh.detectStart(video, gotFaces);
   console.log("detect started");
@@ -36,7 +36,7 @@ function gotFaces(results) {
   faces = results;
 }
 
-function camera() {
+function pic() {
   navigator.mediaDevices.getUserMedia(constraints).then(function (streamObj) {
     video.srcObject = streamObj;
     console.log("camera called");
