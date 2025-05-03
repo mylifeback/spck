@@ -13,10 +13,12 @@ const constraints = {
   }
 }
 
+
 preload();
 camera();
 setup();
 // document.addEventListener("DOMContentLoaded", setup);
+setInterval(console.log({ faces }), 2000);
 
 function preload() {
   faceMesh = ml5.faceMesh(options);
@@ -25,18 +27,18 @@ function preload() {
 
 function gotFaces(results) {
   faces = results;
-  console.log("got " + {results});
+  // console.log("got " + {results});
 }
 
 function got1Face(results) {
-  console.log("hello");
-  console.log("got 1 face" + { results });
+  // console.log("hello");
+  // console.log("got 1 face" + { results });
 }
 
 function setup() {
-  // faceMesh.detectStart(video, gotFaces);
+  faceMesh.detectStart(video, gotFaces);
   // faceMesh.detect(video, got1Face);
-  let triangles = faceMesh.getTriangles();
+  // let triangles = faceMesh.getTriangles();
   console.log({ triangles });
 
 }
