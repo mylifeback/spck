@@ -15,11 +15,16 @@ const constraints = {
 }
 
 function setup() {
+  console.log("setup started");
   preload();
   camera();
   setInterval(console.log({ faces }), 3000);
   faceMesh.detectStart(video, gotFaces);
   console.log("detect started");
+}
+
+function draw() {
+  
 }
 
 function preload() {
