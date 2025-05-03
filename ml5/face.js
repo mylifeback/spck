@@ -39,6 +39,7 @@ function got1Face(results) {
 
 function setup() {
   faceMesh.detectStart(video, gotFaces);
+  console.log("detect started");
   // faceMesh.detect(video, got1Face);
   // let triangles = faceMesh.getTriangles();
   // console.log({ triangles });
@@ -48,10 +49,11 @@ function setup() {
 function camera() {
   navigator.mediaDevices.getUserMedia(constraints).then(function (streamObj) {
     video.srcObject = streamObj;
-    // stream = streamObj;
+    console.log("camera called");
     video.onloadedmetadata = function (event) {
       video.play();
       setup();
+      console.log("video started, setup called");
     };
   })
 }
