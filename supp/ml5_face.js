@@ -19,7 +19,7 @@ const source = "https://";
 preload();
 camera();
 setup();
-// window.addEventListener("load", setup);
+// document.addEventListener("DOMContentLoaded", setup);
 
 function preload() {
   faceMesh = ml5.faceMesh(options);
