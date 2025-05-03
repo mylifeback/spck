@@ -1,18 +1,25 @@
-// Initialize the imaImageClassifier method with the pre-trained SqueezeNet model.
-const classifier = new ml5.ImageClassifier("SqueezeNet");
+let CLASSIFIER = "MobileNet";
+const image = document.getElementById("image");
+const result = document.getElementById("result");
+const probability = document.getElementById("probability");
 
-function onImageReady() {
-  // Get the image element from the page
-  let img = document.getElementById("image");
-  // Get a prediction for that image
-  classifier.predict(img, 10, gotResult);
+const classifier = ml5.imageClassifier(CLASSIFIER);
+
+
+
+// function onImageReady() {
+//   console.log("ready");
+// }
+
+function onImageLoaded(){
+  console.log("loaded");
+  classifier.classify(image, 10, gotResult);
+  console.log("predicted");
 }
 
-// When we get the results
-function gotResult(results) {
-  // The results are in an array ordered by probability.
-  document.getElementById("result").innerText = results[0].label;
-  document.getElementById(
-    "probability"
-  ).innerText = results[0].probability.toPrecision(2);
+function gotResult(results){
+  console.log("got result ...");
+  console.log({results});
+  // result.innerText = results[0].label;
+  // probability.innerText = results[0].probability.toPrecision(2);
 }
