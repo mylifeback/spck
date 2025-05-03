@@ -23,7 +23,7 @@ function setup() {
   video.hide();
 
   faceMesh.detectStart(video, gotFaces);
-  console.log(video);
+  // console.log(video);
 }
 
 function draw() {
