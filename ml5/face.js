@@ -17,7 +17,7 @@ const constraints = {
 
 preload();
 camera();
-setup();
+// setup();
 // document.addEventListener("DOMContentLoaded", setup);
 setInterval(console.log({ faces }), 3000);
 
@@ -38,7 +38,7 @@ function got1Face(results) {
 }
 
 function setup() {
-  faceMesh.detectStart(stream, gotFaces);
+  faceMesh.detectStart(video, gotFaces);
   // faceMesh.detect(video, got1Face);
   // let triangles = faceMesh.getTriangles();
   // console.log({ triangles });
@@ -48,8 +48,11 @@ function setup() {
 function camera() {
   navigator.mediaDevices.getUserMedia(constraints).then(function (streamObj) {
     video.srcObject = streamObj;
-    stream = streamObj;
-    video.onloadedmetadata = function (event) { video.play() };
+    // stream = streamObj;
+    video.onloadedmetadata = function (event) {
+      video.play();
+      setup();
+    };
   })
 }
 
