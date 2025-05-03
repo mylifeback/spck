@@ -33,7 +33,7 @@ function v() {
   // createCanvas(640, 480);
   v = createCapture(VIDEO);
   v.size(640, 480);
-  v.hide();
+  // v.hide();
 
   faceMesh.detectStart(v, gotFaces);
 }
