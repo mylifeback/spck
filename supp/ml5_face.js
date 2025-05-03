@@ -23,12 +23,12 @@ function preload() {
   console.log("preloading ");
 }
 
-function gotFaces(results, error) {
+function gotFaces(results) {
   faces = results;
   console.log("got " + {results});
 }
 
-function got1Face(results, error) {
+function got1Face(results) {
   console.log("hello");
   console.log("got 1 face" + { results });
 }
