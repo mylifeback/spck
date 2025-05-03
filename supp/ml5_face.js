@@ -39,7 +39,7 @@ function setup() {
   faceMesh.detectStart(video, gotFaces);
   // faceMesh.detect(video, got1Face);
   // let triangles = faceMesh.getTriangles();
-  console.log({ triangles });
+  // console.log({ triangles });
 
 }
 
