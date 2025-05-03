@@ -1,6 +1,7 @@
 
 const canvas = document.getElementById("canvas");
 const video = document.getElementById("video");
+let stream;
 let faceMesh;
 let faces = [];
 let options = { maxFaces: 1, refineLandmarks: false, flipped: false };
@@ -37,7 +38,7 @@ function got1Face(results) {
 }
 
 function setup() {
-  faceMesh.detectStart(video, gotFaces);
+  faceMesh.detectStart(stream, gotFaces);
   // faceMesh.detect(video, got1Face);
   // let triangles = faceMesh.getTriangles();
   // console.log({ triangles });
@@ -47,6 +48,7 @@ function setup() {
 function camera() {
   navigator.mediaDevices.getUserMedia(constraints).then(function (streamObj) {
     video.srcObject = streamObj;
+    stream = streamObj;
     video.onloadedmetadata = function (event) { video.play() };
   })
 }
