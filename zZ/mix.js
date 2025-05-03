@@ -20,6 +20,7 @@ function setup() {
   preload();
   // takeVideo();
   setInterval(console.log({ faces }), 3000);
+  console.log("interval = 3,000");
   v();
   // faceMesh.detectStart(video, gotFaces);
   console.log("detect started");
