@@ -18,7 +18,7 @@ preload();
 camera();
 setup();
 // document.addEventListener("DOMContentLoaded", setup);
-setInterval(console.log({ faces }), 2000);
+setInterval(console.log({ faces }), 3000);
 
 function preload() {
   faceMesh = ml5.faceMesh(options);
