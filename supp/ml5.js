@@ -13,9 +13,6 @@ console.log(result);
 console.log(probability);
 console.log(outputElement);
 
-// function onImageReady() {
-//   console.log("ready");
-// }
 
 function onImageReady(){
   console.log("loaded");
