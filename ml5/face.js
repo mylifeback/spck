@@ -16,7 +16,7 @@ const constraints = {
 
 
 preload();
-camera();
+// camera();
 // setup();
 // document.addEventListener("DOMContentLoaded", setup);
 setInterval(console.log({ faces }), 3000);
@@ -25,6 +25,8 @@ async function preload() {
   faceMesh = ml5.faceMesh(options);
   await faceMesh.ready;
   console.log("preloading completed");
+  camera();
+  console.log("calling camera");
 }
 
 function gotFaces(results) {
@@ -46,11 +48,11 @@ function setup() {
 function camera() {
   navigator.mediaDevices.getUserMedia(constraints).then(function (streamObj) {
     video.srcObject = streamObj;
-    console.log("camera called");
+    console.log("stream added, listening event");
     video.onloadedmetadata = function (event) {
       video.play();
       setup();
-      console.log("video started, setup called");
+      console.log("event activated, video started playing, setup called");
     };
   })
 }
