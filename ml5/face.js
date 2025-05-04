@@ -16,7 +16,7 @@ const constraints = {
 }
 
 preload();
-setInterval((console.log({ faces[0] })), 3000);
+setInterval((console.log("3 seconds")), 3000);
 
 async function preload() {
   faceMesh = ml5.faceMesh(options);
