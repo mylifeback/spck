@@ -37,7 +37,6 @@ function gotFaces(results) {
   });
 }
 
-
 function startDetect() {
   faceMesh.detectStart(video, gotFaces);
 }
