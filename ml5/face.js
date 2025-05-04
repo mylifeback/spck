@@ -20,6 +20,8 @@ preload();
 // setup();
 // document.addEventListener("DOMContentLoaded", setup);
 setInterval(console.log({ faces }), 3000);
+setInterval(console.log("hello"), 3000);
+console.log("finished");
 
 async function preload() {
   faceMesh = ml5.faceMesh(options);
