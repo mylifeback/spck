@@ -14,7 +14,7 @@ const constraints = {
   }
 }
 
-
+console.log({ faces });
 preload();
 // camera();
 // setup();
