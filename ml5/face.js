@@ -15,25 +15,16 @@ const constraints = {
   }
 }
 
-console.log({ faces });
 preload();
-// camera();
-// setup();
-// document.addEventListener("DOMContentLoaded", setup);
-setInterval(console.log({ faces[0] }), 3000);
-setInterval(console.log("hello"), 3000);
-console.log("finished");
+setInterval((console.log({ faces[0] })), 3000);
 
 async function preload() {
   faceMesh = ml5.faceMesh(options);
   await faceMesh.ready;
-  console.log("preloading completed");
   camera();
-  console.log("calling camera");
 }
 
 function gotFaces(results) {
-  // console.log ("called back");
   faces = results;
   ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
   ctx.fillStyle = 'red';
@@ -47,23 +38,16 @@ function gotFaces(results) {
 }
 
 
-function setup() {
+function startDetect() {
   faceMesh.detectStart(video, gotFaces);
-  console.log("detect started");
-  // faceMesh.detect(video, got1Face);
-  // let triangles = faceMesh.getTriangles();
-  // console.log({ triangles });
-
 }
 
 function camera() {
   navigator.mediaDevices.getUserMedia(constraints).then(function (streamObj) {
     video.srcObject = streamObj;
-    console.log("stream added, listening event");
     video.onloadedmetadata = function (event) {
       video.play();
-      setup();
-      console.log("event activated, video started playing, setup called");
+      startDetect();
     };
   })
 }
