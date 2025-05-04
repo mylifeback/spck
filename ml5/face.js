@@ -1,6 +1,7 @@
 
 const canvas = document.getElementById("canvas");
 const video = document.getElementById("video");
+let ctx = canvas.getContext('2d');
 let stream;
 let faceMesh;
 let faces = [];
@@ -34,7 +35,15 @@ async function preload() {
 function gotFaces(results) {
   // console.log ("called back");
   faces = results;
-  console.log("got " + {results});
+  ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+  ctx.fillStyle = 'red';
+  faces.forEach(face => {
+    face.keypoints.forEach(keypoint => {
+      ctx.beginPath();
+      ctx.arc(keypoint.x, keypoint.y, 4, 0, 2 * Math.PI);
+      ctx.fill();
+    });
+  });
 }
 
 
