@@ -21,9 +21,10 @@ camera();
 // document.addEventListener("DOMContentLoaded", setup);
 setInterval(console.log({ faces }), 3000);
 
-function preload() {
+async function preload() {
   faceMesh = ml5.faceMesh(options);
-  console.log("preloading ");
+  await faceMesh.ready;
+  console.log("preloading completed");
 }
 
 function gotFaces(results) {
@@ -32,10 +33,6 @@ function gotFaces(results) {
   // console.log("got " + {results});
 }
 
-function got1Face(results) {
-  // console.log("hello");
-  // console.log("got 1 face" + { results });
-}
 
 function setup() {
   faceMesh.detectStart(video, gotFaces);
